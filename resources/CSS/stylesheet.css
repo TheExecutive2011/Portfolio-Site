@@ -1,0 +1,188 @@
+    /* UTILITIES */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Rubik','Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+    }
+    body {
+        font-family: cursive;
+        font-size: calc(10px + 0.33vw);
+        -webkit-font-smoothing: antialiased;
+        color: #121314;
+    }
+    p {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+        max-width: 28em;
+    }
+    a {
+        text-decoration: none;
+        white-space: nowrap;
+        color: #121314;
+        position: relative;
+    }
+    .body_text {
+        padding: 5vh 10vw;
+    }
+    .body_text p {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+        max-width: 28em;
+    }
+    .body_text a:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 66%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+        background-color: #a03939;
+        opacity: 30%;
+    }
+    .body_text a:hover:after {
+        top: 0%;
+    }
+    
+    li {
+        list-style: none;
+    }
+  
+    h1 {
+        font-size: 4.5em;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    h3{
+        font-weight: 500;
+        font-size: 2.2em;
+        line-height: 1.4;
+        max-width: 28em;
+    }
+  
+    /* NAVBAR STYLING STARTS */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px; /*Padding around the words in the Nav Bar*/
+        background-color: rgb(37, 37, 37);
+        color: #fff;
+        position: sticky; /*Sticks the Nav Bar to one specific position regardless of scroll*/
+        top: 0; /*Selects the top of the page as the specific position*/
+    }
+    .nav-links a {
+        color: #fff;
+    }
+    /* LOGO/Signature */
+    .logo {
+        font-size: 40px;
+        font-family: 'Dawning of a New Day', cursive; 
+        font-weight: bold;
+
+    }
+    /* NAVBAR MENU */
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 24px;
+    }
+    .menu li:hover {
+        background-color: #a03939;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    .menu li {
+        padding: 5px 14px;
+    }
+    /* DROPDOWN MENU */
+    .interests {
+        position: relative; 
+        transition: 0.3s ease; 
+    }
+    .dropdown {
+        background-color: rgb(37, 37, 37);
+        padding: 1em 0;
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        /*display: none;*/
+        opacity: 0%;
+        border-radius: 10px;
+        top: 35px;
+        transition: 0.3s ease;
+    }
+    .dropdown li + li {
+        margin-top: 10px;
+        transition: 0.3s ease;
+    }
+    .dropdown li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+        transition: 0.3s ease;
+    }
+    .dropdown li:hover {
+        background-color: #a03939;;
+        transition: 0.3s ease;
+    }
+    .interests:hover .dropdown {
+        /*display: block;*/
+        opacity: 100%;
+        transition: 0.3s ease;
+    }
+  
+    /*RESPONSIVE NAVBAR MENU STARTS*/
+    /* CHECKBOX HACK */
+    input[type=checkbox]{
+        display: none;
+    } 
+    /*HAMBURGER MENU*/
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+    }
+
+    /* APPLYING MEDIA QUERIES */
+
+    /*Screens smaller than 768px*/
+    @media (max-width: 768px) {
+        .menu { 
+            display:none;
+            position: absolute;
+            background-color:rgb(37, 37, 37); 
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 16px 0;
+        }
+        .menu li:hover {
+            display: inline-block;
+            background-color:#a03939;
+            transition: 0.3s ease;
+        }
+        .menu li + li {
+            margin-top: 12px;
+        }
+        input[type=checkbox]:checked ~ .menu{
+            display: block;
+        }
+        .hamburger {
+            display: block;
+        }
+        .dropdown {
+            left: 50%;
+            top: 30px;
+            transform: translateX(35%);
+            transition: 0.3s ease;
+        }
+        .dropdown li:hover {
+            background-color: #a03939;
+            transition: 0.3s ease;
+        }
+    }
