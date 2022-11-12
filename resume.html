@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="resources/CSS/stylesheet.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="resources/CSS/stylesheet.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>WM - Resume</title>
   </head>
   <body>
@@ -21,11 +23,11 @@
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <!-- NAVIGATION MENUS -->
         <div class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li class="interests">
-            <a href="WhoAmI.html">Who am I?</a>
+            <a href="WhoAmI.html" id="who">Who am I?</a>
             <!-- DROPDOWN MENU -->
             <ul class="dropdown">
                 <li><a href="AI.html">AI<br>Enthusiast</a></li>
@@ -43,27 +45,530 @@
         </div>
       </ul>
     </nav>
-    <div class="body_text">
-      <h1>
-        Hello!
+    <div class="body_text" data-aos="fade-left">
+      <h1 id="resume_h1">
+        Resume
       </h1>
       <br>
-      <h3>
-          My name is Warren Morrison.
+      <h3 id="resume_h3">
+        Hello! My name is Warren Morrison.
       </h3>
       <br>
-      <p>
-          I'm a developer and am currently working on this portfolio site.
+      <p id="resume_p">
+        If you're on this page, then you are probably looking for a more traditional view of my professional experience and education.  If you prefer the familiarity of LinkedIn, feel free visit <a href="https://www.linkedin.com/in/warrengmorrison/" target="_blank">my profile</a> there.  It has largely the same information as what you'll find below.
       </p>
       <br>
-      <p>    
-        Once this page is finished, it will be designed for you to see my resume.  Ideally, you'll get a complete, interactive resume that demonstrates my education and experience.  For now, though, feel free to reach out to me on <a href="https://www.linkedin.com/in/warrengmorrison/" target="_blank">LinkedIn</a>! 
-    </p> 
+      <p id="resume_p">    
+        <i><a href="contact.html">Let me know</a> if there is something awesome that you would like to achieve together!</i>
+      </p> 
       <br>
-      <p>
-        If you've made it this far and are still curious to learn more about me, check out one of my other pages:  <a href="technologist.html">technologist</a>, <a href="AI.html">AI enthusiast</a>, <a href="videogames.html">video gamer</a>, <a href="boardgames.html">board gamer</a>, <a href="woodworking.html">woodworker</a>, <a href="audiophile.html">audiophile</a>, or <a href="discgolf.html">disc golfer</a>.  
-    </p>
+    
+      <div class="grouping">
+        <p class="resume_category center">
+          Education
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/PU-H-Full-RGB.png" alt="Purdue University logo" width="30%">
+        </div>
+        <p class="degree left">
+          Master of Science in Economics
+        </p>
+        <p class="school left">
+          Purdue University
+        </p>
+        <p class="date left">
+          Expected in 2023
+        </p>
+        <p class="degree_notes left">
+          <strong>Foci</strong>: Business and Data Analytics, Financial Econometrics
+        </p>
+        <p class="degree_notes left">
+          Studies have taken place in parallel with my current role at Bank of America
+        </p>
+        <p class="degree_notes left">
+          70% of coursework completed
+        </p>
+      </div>
+      
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <div class="image right">
+          <img src="../Portfolio Site/resources/images/Horizontal_VT_Full_Color_RGB.png" alt="Virginia Tech logo" width="30%">
+        </div>
+        <p class="degree right">
+          Master of Information Technology
+        </p>
+        <p class="school right">
+          Virginia Polytechnic Institute and State University
+        </p>
+        <p class="date right">
+          2015
+        </p>
+        <p class="degree_notes right">
+          <strong>Foci</strong>: Information Security, Business Information Systems, Healthcare Systems
+        </p>
+      </div>
+      
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/800px-Lee_University_logo.png" alt="Lee University logo" width="30%">
+        </div>
+        <p class="degree left">
+          Bachelor of Arts
+        </p>
+        <p class="school left">
+          Lee University
+        </p>
+        <p class="date left">
+          2011
+        </p>
+        <p class="degree_notes left">
+          <strong>Majors</strong>: Political Science and Sociology (double major)
+        </p>
+        <p class="degree_notes left">
+          <strong>Minor</strong>: Religion
+        </p>
+        <p class="degree_notes left">
+          President of Alpha Kappa Delta (National Sociology Honor Society)
+        </p>
+        <p class="degree_notes left">
+          Member of Pi Sigma Alpha (National Political Science Honor Society)
+        </p>
+        <p class="degree_notes left">
+          Vice President, Secretary, and Treasurer of the Sociology Club
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-in" data-aos-duration="1200">
+        <p class="resume_category center">
+          Certifications
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/Google.png" alt="Google logo" width="30%">
+        </div>
+        <p class="certification left">
+          Google Data Analytics Professional Certificate 
+        </p>
+        <p class="issuer left">
+          Google
+        </p>
+        <p class="date left">
+          Expected in November of 2023
+        </p>
+        <p class="cert_notes left">
+          Coursework:
+        </p>
+        <ol class="cert_sub_notes left">
+          <li>Foundations: Data, Data, Everywhere</li>
+          <li>Ask Questions to Make Data-Driven Decisions</li>
+          <li>Prepare Data for Exploration</li>
+          <li>Process Data from Dirty to Clean</li>
+          <li>Analyze Data to Answer Questions</li>
+          <li>Share Data Through the Art of Visualization</li>
+          <li>Data Analysis with R Programming</li>
+          <li>Google Data Analytics Capstone: Complete a Case Study</li>
+        </ol>
+      </div>
+
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <div class="image right">
+          <img src="../Portfolio Site/resources/images/SAI_Logo_COLOR_scalable-1.png" alt="Scaled Agile logo" width="30%">
+        </div>
+        <p class="certification right">
+          SAFe Certified Scrum Master
+        </p>
+        <p class="issuer right">
+          Scaled Agile, Inc.
+        </p>
+        <p class="date right">
+          2018 
+        </p>
+        <p class="cert_notes right">
+          Credential ID 35761176-6602
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/Splunk-Corp-Logo-K-rgb.png" alt="Splunk logo" width="30%">
+        </div>
+        <p class="certification left">
+          Splunk Power User Certification
+        </p>
+        <p class="issuer left">
+          Splunk
+        </p>
+        <p class="date left">
+          2016 
+        </p>
+        <p class="cert_notes left">
+          Credential ID Cert-110217
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-in" data-aos-duration="1200">
+        <p class="resume_category center">
+          Skills & Interests
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <p class="skills_interests left">
+          Skills
+        </p>
+        <p class="interest_notes left">
+          Python; Java; SQL; HTML; CSS; JavaScript; quantitative research; strategic planning; strategic partnerships; leadership; relationship management; change management; incident management; problem management; program management; project management; agile development methodology 
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <p class="skills_interests right">
+          Interests
+        </p>
+        <p class="interest_notes right">
+          <a href="../Portfolio Site/technologist.html">Technology</a>; <a href="../Portfolio Site/woodworking.html">woodworking</a>; economics; <a href="../Portfolio Site/audiophile.html">music</a>; <a href="../Portfolio Site/coffee.html">coffee</a>; <a href="../Portfolio Site/discgolf.html">disc golf</a>; football; Habitat for Humanity
+        </p>
+      </div>
+
+
+      <div class="grouping" data-aos="fade-center" data-aos-duration="1200">
+        <p class="resume_category center">
+          Experience
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/Logo.jpg" alt="logo" width="30%">
+        </div>
+        <p class="job_title left">
+          Vice President
+        </p>
+        <p class="employer left">
+          Bank of America      
+        </p>
+        <p class="date left">
+          March 2019 - Present
+        </p>
+        <p class="duties left">
+          As a Vice President, I performed a wide variety of tasks including, but certainly not limited to:<br>
+          ·	Created and maintained a technology release calendar<br>
+          ·	Managed code deployment freeze event exceptions<br>
+          ·	Facilitated an executive committee for change management reviews<br>
+          ·	Project manager for Volcker rule, Regulation W, and Information Barrier<br>
+          ·	Provided strategic advisement for release management team<br>
+          ·	Designed and implemented reports and metrics for change and release management<br>
+          ·	Managed agile methodology adoption<br>
+          ·	Managed budget forecasts, variance research, and risk mitigation for multimillion-dollar projects<br>
+          ·	SAFe Scrum Master training and observation<br>
+          ·	Administrator of team collaboration tools<br>
+          ·	Policy compliance enforcement<br>
+          ·	Risk management and mitigation<br>
+          ·	Successfully bridged many gaps between business and technology teams<br>
+          ·	Consistently received recognition for being able to successfully explain complex concepts to broad audiences<br>
+          ·	Initiated, designed, and presented change management training sessions to hundreds of employees across the enterprise from a variety of backgrounds and roles<br>
+          ·	Provided technical expertise to non-technical teams<br>
+          ·	Created and maintained process documentation and training for technology change management<br>
+          ·	Technical writing on a variety of topics<br>
+          <br>
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <div class="image right">
+          <img src="../Portfolio Site/resources/images/Logo.jpg" alt="logo" width="30%">
+        </div>
+        <p class="job_title right">
+          Vice President
+        </p>
+        <p class="employer right">
+          Bank of America      
+        </p>
+        <p class="date right">
+          December 2017 - March 2019
+        </p>
+        <p class="duties right">
+          As a Vice President, I performed the tasks of a wide variety of roles, including that of a portfolio manager, program manager, project manager, and release manager. These include, but are certainly not limited to:<br>
+          ·	While performing as a portfolio manager, I oversaw ~15 technology programs and ~75 projects within those:<br>
+          o	Developed portfolio alignment strategy<br>
+          o	Curated and developed relationships across all lines of business<br>
+          o	Continuous portfolio analysis<br>
+          o	Ensured adherence to change management standards<br>
+          o	Trained new program and project managers<br>
+          o	Created and presented reports to executives<br>
+          ·	Strategic planning, negotiation, and direction<br>
+          ·	Served as a volunteer leader for the company's work with Habitat for Humanity<br>
+          ·	Member of the Employee Engagement Council<br>
+          ·	Coordinator for a tool review and upgrade committee<br>
+          o	Identification of tool and process improvement opportunities and solutions<br>
+          o	Implementation of proofs of concept<br>
+          o	Management of tool implementation in production environment<br>
+          ·	SIAI (Self-identified audit issue) identification, creation, mitigation, and compliance<br>
+          ·	Managed the merging of two high-profile tools via a multi-LOB effort<br>
+          ·	Participated in strategy discussions, proofs of concept, and user acceptance testing (UAT) for an internal program and project management system of record<br>
+          ·	Provided advisement on change management to executives<br>
+          ·	Consistent recognition as the foremost subject matter expert on all things related to change management in a rapidly changing regulatory environment<br>
+          ·	Consistently received recognition for being able to successfully explain complex concepts to broad audiences<br>
+          ·	Successfully bridged many gaps between business and technology teams<br>
+          ·	Managed agile methodology adoption<br>
+          ·	Managed project for data control layer development, amongst others<br>
+          ·	Managed financial forecasts, conducted variance research, and mitigated risks<br>
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/Logo.jpg" alt="logo" width="30%">
+        </div>
+        <p class="job_title left">
+          Vice President
+        </p>
+        <p class="employer left">
+          Bank of America      
+        </p>
+        <p class="date left">
+          September 2016 - December 2017
+        </p>
+        <p class="duties left">
+          As a Vice President, I performed a wide variety of tasks including, but certainly not limited to:<br>
+          ·	Coordination and approval of infrastructure, code, and other technology changes<br>
+          ·	Streamlined code change process<br>
+          ·	User access management<br>
+          ·	Provided training to employees on areas of expertise<br>
+          ·	Technical writing on a variety of topics<br>
+          ·	Facilitator for an Executive Committee that reviewed technology changes from end to end<br>
+          ·	Managed code deployment freeze event exceptions<br>
+          ·	Performed QA duties for technology change deployment requests and documentation<br>
+          ·	Risk management and mitigation<br>
+          ·	Gathered, analyzed, and reported on data regarding the technology change process<br>
+          ·	Ensured consistency of technology change process across all teams<br>
+          ·	Administrator for team collaboration tools<br>
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <div class="image right">
+          <img src="../Portfolio Site/resources/images/Logo.jpg" alt="logo" width="30%">
+        </div>
+        <p class="job_title right">
+          Application Production Support Analyst
+        </p>
+        <p class="employer right">
+          Bank of America (via Matlen Silver)      
+        </p>
+        <p class="date right">
+          November 2015 - September 2016
+        </p>
+        <p class="duties right">
+          As an Application Production Support Analyst, I performed a wide variety of tasks including, but certainly not limited to:<br>
+          ·	Coordination and deployment of code and database changes<br>
+          ·	Disaster recovery exercises, support, and execution<br>
+          ·	Environment management and synchronization<br>
+          ·	Diagnosed and resolved technology incidents and problems<br>
+          ·	Elevated security account access<br>
+          ·	Declining/not permitted technology remediation<br>
+          ·	User access management<br>
+          ·	Trained employees in areas of expertise<br>
+          ·	Technical writing on a variety of topics for a wide-ranging audience<br>
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="" alt="Pens For A Cause logo" width="30%">
+        </div>
+        <p class="job_title left">
+          Owner
+        </p>
+        <p class="employer left">
+          Pens For A Cause      
+        </p>
+        <p class="date left">
+          September 2016 - December 2017
+        </p>
+        <p class="duties left">
+          Lead woodworker and responsible for running the business. <br>
+            o	Sales in 22 countries across 4 continents<br>
+          Performed a variety of roles including:<br>
+            o	System Administrator<br>
+              	Managed the system and optimized its performance while minimizing cost <br>
+              	Custom built desktops while ensuring that the overall system design allowed for compatibility across all devices <br>
+              	Managed, maintained backups, and performed troubleshooting procedures for desktops, laptops, tablets, smart phones, printers, and other devices<br>
+              	Set up point of sale system and trained users <br>
+              	Managed operating system and software selection, updates, and upgrades<br>
+              	Ensured network security and efficiency utilizing both wired and wireless technologies<br>
+            o	Webmaster<br>
+              	Utilized HTML, CSS, and JavaScript to design, develop, and maintain the e-commerce website<br>
+              	Ensured browser compatibility to maximize the number of potential viewers <br>
+              	Utilized various internet marketing techniques to drive traffic to the website<br>
+              	Incorporated Google Analytics for accurate and detailed site traffic data<br>
+            o	Database Administrator<br>
+              	Designed, developed, and maintained a relational database utilizing MySQL that actively kept track of materials, products, and sales<br>
+              	Designed and wrote efficient SQL queries to provide the database user with exactly the data that they needed to maximize business value<br>
+              	Maintained database security and integrity by implementing disaster management and authorization management techniques<br>
+            o	Data Analyst<br>
+              	Extracted data from multiple internal sources to gain advantageous insights for various aspects of the business <br>
+              	Compiled, organized, and modeled data and insights derived from such data in a manner that is easy to understand for IT professionals and non-IT professionals alike<br>
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <div class="image right">
+          <img src="" alt="Morrison Genealogical Research logo" width="30%">
+        </div>
+        <p class="job_title right">
+          Owner
+        </p>
+        <p class="employer right">
+          Morrison Genealogical Research    
+        </p>
+        <p class="date right">
+          September 2010 - December 2011
+        </p>
+        <p class="duties right">
+          Lead genealogist and responsible for running the business
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/800px-Lee_University_logo.png" alt="Lee University logo" width="30%">
+        </div>
+        <p class="job_title left">
+          Research Assistant
+        </p>
+        <p class="employer left">
+          Lee University     
+        </p>
+        <p class="date left">
+          January 2011 - May 2011
+        </p>
+        <p class="duties left">
+          Engaged students in a Timed Repetitive Quizzes study
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <div class="image right">
+          <img src="../Portfolio Site/resources/images/800px-Lee_University_logo.png" alt="Lee University logo" width="30%">
+        </div>
+        <p class="job_title right">
+          Teaching Assistant
+        </p>
+        <p class="employer right">
+          Lee University    
+        </p>
+        <p class="date right">
+          August 2010 - December 2010
+        </p>
+        <p class="duties right">
+          Teaching Assistant for SOCI-461 History of Sociological Theory
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/Kroger-logo-500x333.jpg" alt="Kroger logo" width="30%">
+        </div>
+        <p class="job_title left">
+          Cashier
+        </p>
+        <p class="employer left">
+          The Kroger Company    
+        </p>
+        <p class="date left">
+          June 2005 - Aug 2010
+        </p>
+        <p class="duties left">
+          Cashier; Customer Service Representative; Floor Supervisor; stocked shelves; other related work
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <div class="image right">
+          <img src="" alt="Starnes, Roberts, & Associates logo" width="30%">
+        </div>
+        <p class="job_title right">
+          Intern
+        </p>
+        <p class="employer right">
+          Starnes, Roberts, & Associates    
+        </p>
+        <p class="date right">
+          January 2010 - May 2010
+        </p>
+        <p class="duties right">
+          Undergraduate internship to explore the daily operations of a law firm
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="" alt="April Randle Law Office logo" width="30%">
+        </div>
+        <p class="job_title left">
+          Intern
+        </p>
+        <p class="employer left">
+          April Randle Law Office    
+        </p>
+        <p class="date left">
+          September 2009 - January 2010
+        </p>
+        <p class="duties left">
+          Undergraduate internship to explore the daily operations of a law firm
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-left" data-aos-duration="1200">
+        <div class="image right">
+          <img src="../Portfolio Site/resources/images/BRAAC-Logo-2015.jpg" alt="Blue Ridge Autism Center logo" width="30%">
+        </div>
+        <p class="job_title right">
+          Summer Camp Assistant
+        </p>
+        <p class="employer right">
+          Blue Ridge Autism Center     
+        </p>
+        <p class="date right">
+          June 2009 - July 2009
+        </p>
+        <p class="duties right">
+          Responsible for daily interaction with Autistic children.  Note: the organization is now called the Blue Ridge Autism & Achievement Center.  
+        </p>
+      </div>
+
+      <div class="grouping" data-aos="fade-right" data-aos-duration="1200">
+        <div class="image left">
+          <img src="../Portfolio Site/resources/images/800px-Lee_University_logo.png" alt="Lee University logo" width="30%">
+        </div>
+        <p class="job_title left">
+          Resident Assistant
+        </p>
+        <p class="employer left">
+          Lee University   
+        </p>
+        <p class="date left">
+          August 2008 - June 2009
+        </p>
+        <p class="duties left">
+          Responsible for a hall of about 20 freshmen; community development; health and safety inspections; fire safety training; special situation training; event planning; dispute resolution; other related work
+        </p>
+      </div>
+
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
+
+
 
