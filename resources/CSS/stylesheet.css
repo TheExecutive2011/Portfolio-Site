@@ -119,6 +119,7 @@
         border-radius: 10px;
         top: 35px;
         transition: 0.3s ease;
+        visibility: hidden;
     }
     .dropdown li + li {
         margin-top: 10px;
@@ -138,6 +139,7 @@
         /*display: block;*/
         opacity: 100%;
         transition: 0.3s ease;
+        visibility: visible;
     }
   
     /*RESPONSIVE NAVBAR MENU STARTS*/
