@@ -80,6 +80,7 @@
         color: #fff;
         position: sticky; /*Sticks the Nav Bar to one specific position regardless of scroll*/
         top: 0; /*Selects the top of the page as the specific position*/
+        z-index: 1000;
     }
     .nav-links a {
         color: #fff;
@@ -400,6 +401,7 @@
 .bottom_AI {
     padding-top: 0;
 }
+
 
 
 
