@@ -1,69 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="resources/CSS/stylesheet.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
-    <title>WM - Disc Golfer</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <!-- LOGO -->
-      <div class="logo">Warren Morrison</div>
-      <!-- NAVIGATION MENU -->
-      <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li class="interests">
-            <a href="WhoAmI.html">Who am I?</a>
-            <!-- DROPDOWN MENU -->
-            <ul class="dropdown">
-              <li><a href="AI.html">AI<br>Enthusiast</a></li>
-              <li><a href="audiophile.html">Audiophile</a></li>
-              <li><a href="boardgames.html">Board<br>Gamer</a></li>
-              <li><a href="coffee.html">Coffee<br>Aficionado</a></li>
-              <li><a href="discgolf.html">Disc<br>Golfer</a></li>
-              <li><a href="dnd.html">D&D<br>Player</a></li>
-              <li><a href="technologist.html">Technologist</a></li>
-              <li><a href="videogames.html">Video<br>Gamer</a></li>
-              <li><a href="woodworking.html">Woodworking</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </div>
-      </ul>
-    </nav>
-    <div class="body_text">
-      <h1>
-        Hello!
-      </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Sets viewport width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="resources/CSS/stylesheet.css" />
+  <!-- Google API font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+  <!-- Page title -->
+  <title>WM - Disc Golfer</title>
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <!-- Logo location -->
+    <div class="logo">Warren Morrison</div>
+    <!-- Navigation links-->
+    <ul class="nav-links">
+      <!-- Checkbox hack for hamburger menu -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- Navigation menu -->
+      <div class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <!-- Dropdown menu -->
+        <li class="interests">
+          <a href="WhoAmI.html">Who am I?</a>
+          <!-- Dropdown menu items -->
+          <ul class="dropdown">
+            <li><a href="AI.html">AI<br>Enthusiast</a></li>
+            <li><a href="audiophile.html">Audiophile</a></li>
+            <li><a href="boardgames.html">Board<br>Gamer</a></li>
+            <li><a href="coffee.html">Coffee<br>Aficionado</a></li>
+            <li><a href="discgolf.html">Disc<br>Golfer</a></li>
+            <li><a href="dnd.html">D&D<br>Player</a></li>
+            <li><a href="technologist.html">Technologist</a></li>
+            <li><a href="videogames.html">Video<br>Gamer</a></li>
+            <li><a href="woodworking.html">Woodworking</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Beginning of page content -->
+
+  <img src="../Portfolio Site/resources/images/disc_golf_large - cropped.jpg" class="header_image">
+  <!-- Content wrapper -->
+  <div class="body_text">
+    <!-- Headling -->
+    <h1>
+      Disc Golf
+    </h1>
+    <br>
+    <!-- Subheading -->
+    <h3>
+      Fun in the outdoors!
+    </h3>
+    <br>
+    <!-- Intro -->
+    <p>
+      I'm a disc golfer. I'm terrible at it, but I'm having fun with every double bogey I throw!
+    </p>
+    <br>
+    <p>
+      This page is still in development, but once it's finished will provide you with more insights into the rounds that
+      I've recently played, highlights from past rounds, as well as information on my favorite courses.
+    </p>
+    <br>
+    <p>
+      Do you also have a billion drivers that you can't throw? <a href="contact.html">Let me know</a> that I'm not
+      alone!
+    </p>
+    <!-- Base Info Table -->
+    <div class="Base-Info-Table">
+      <table class="styled-table">
+        <!-- Table Headings -->
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Course</th>
+            <th>Location</th>
+            <th>Holes Played</th>
+            <th>Tee</th>
+            <th>Weather</th>
+            <th>Wind</th>
+            <th>Temperature</th>
+            <th>Rating</th>
+            <th>Score</th>
+            <th>Over/Under Par</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <!-- Table Row -->
+        <tbody>
+          <tr>
+            <td>10/27/2022</td>
+            <td>5:12pm</td>
+            <td>Mint Hill Park</td>
+            <td>Mint Hill, NC</td>
+            <td>9 of 9</td>
+            <td>Blue</td>
+            <td>Cloudy</td>
+            <td>-</td>
+            <td>-</td>
+            <td>731</td>
+            <td>31</td>
+            <td>-5</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Holes Table -->
+    <div class="Holes-Table">
+      <table class="styled-table">
+        <!-- Table Headings -->
+        <thead>
+          <tr>
+            <th>Hole</th>
+            <th>Distance</th>
+            <th>Par</th>
+            <th>Score</th>
+            <th>Over/Under Par</th>
+            <th>Putts</th>
+            <th>Penalty</th>
+            <th>Notes</th>
+
+          </tr>
+        </thead>
+        <!-- Table Rows -->
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>304</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-1</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>150</td>
+            <td>3</td>
+            <td>3</td>
+            <td>0</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>259</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>204</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-1</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>231</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>226</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-1</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>363</td>
+            <td>5</td>
+            <td>4</td>
+            <td>-1</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>325</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>411</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-1</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr class="active-row">
+            <td>Totals:</td>
+            <td>2473</td>
+            <td>36</td>
+            <td>31</td>
+            <td>-5</td>
+            <td>12</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Want to try this course out for yourself? Here is where it's located:
+      </p>
+      <div class="Google-Maps">
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdj-4U9O4Ekx6qdJwIVHjZKRfVEg2cf-o&q=place_id:ChIJL45FFkMjVIgRXmjFRiBBxuE">
+        </iframe>
+      </div>
       <br>
       <h3>
-          My name is Warren Morrison.
+        Not quite sure what disc golf is?
       </h3>
       <br>
       <p>
-          I'm a developer and am currently working on this portfolio site.
+        No problem! I've included a YouTube video below that describes what the sport is and how it's played.
       </p>
       <br>
-      <p>    
-        I'm also a disc golfer.  Once this page is finished, it will be designed for you to see the disc golfing side of me.  Ideally, you'll get insights into the rounds that I've recently played, along with highlights from past rounds.
-    </p> 
-    <br>
-    <p>
-      Do you also have a billion drivers that you can't throw?  <a href="contact.html">Let me know</a> that I'm not alone!  
-    </p>
+      <div class="YouTube">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hfHnT1HilMM"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <br>
+      <br>
+      <h3>
+        Your Next Steps
+      </h3>
+      <br>
+      <p>
+        Disc golf can be as laid-back or competitive as you want it to be.
+      </p>
+      <br>
+      <p>
+        Want a competitive experience? Try participating in a local league or tournament! If you're in the Charlotte
+        area, check out the <a href="https://charlottedgc.com/">Charlotte Disc Golf Club</a> for more information.
+      </p>
+      <br>
+      <p>
+        Looking for a fun, laid-back experience? Find a local course and go have fun! My favorite site to find a new
+        course is <a href="https://www.dgcoursereview.com/">Disc Golf Course Review</a>. The site might look a bit
+        outdated, but its usefulness certainly is not.
+      </p>
+      <br>
+      <p>
+        Still have questions? <a href="contact.html">Feel free to ask!</a>
+      </p>
     </div>
-  </body>
-</html>
+  </div>
+</body>
 
+</html>
