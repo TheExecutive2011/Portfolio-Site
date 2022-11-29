@@ -402,6 +402,43 @@
     padding-top: 0;
 }
 
+#issMap { 
+    height: 700px; 
+    padding: 0 10vw;
+    margin: 0 auto 10% auto;
+    border-radius: 10px;
+}
+
+#issMapContainer {
+    max-width: 1000px;
+}
+
+#coordinatesContainer {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#coordLabels {
+    max-width: 30%;
+    margin-right: 0;
+    display: inline-block;
+}
+
+#coordNumbers {
+    max-width: 30%;
+    display: inline-block;
+    margin-left: auto;
+}
+
+#coordNumbers p {
+    text-align: right;
+}
+
+#coordRow {
+    width:100%;
+}
+
 /*Screens smaller than 768px (tablet size and below)*/
 @media (max-width: 768px) {
     .menu { 
@@ -456,6 +493,23 @@
     .front_portrait {
         width:100%;
         border-radius: 10px;
+    }
+    #issMap { 
+        height: 400px; 
+        padding: 0 10vw;
+        margin: 0 auto 10% auto;
+        border-radius: 10px;
+    }
+    #coordLabels {
+        max-width: 100%;
+        margin-right: 0;
+        display: inline-block;
+    }
+    
+    #coordNumbers {
+        max-width: 100%;
+        display: inline-block;
+        margin-left: auto;
     }
 }
 
