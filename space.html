@@ -9,12 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-    <script type="text/javascript" src="resources/JS/ISS.js"></script>
     <title>WM - Astrophile</title>
 </head>
 
@@ -54,7 +52,7 @@
     </nav>
     <!-- Beginning of page content -->
 
-    <img src="resources/images/MilkyWay_alt_edit.jpg" class="header_image">
+    <img src="resources/images/milkyway_alt_edit.jpg" class="header_image">
     <!-- Content wrapper -->
     <div class="body_text">
         <h1>
@@ -106,9 +104,6 @@
             <div id="issMap"></div>
         </div>
     </div>
-
-
-
     <script>
         // Making a map and tiles
         const mymap = L.map('issMap').setView([0, 0], 1);
