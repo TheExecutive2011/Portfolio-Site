@@ -3,41 +3,48 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Rubik','Segoe UI',
-          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-          sans-serif;
+        font-family: 'Rubik', 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
     }
+
     body {
         font-family: cursive;
         font-size: calc(10px + 0.33vw);
         -webkit-font-smoothing: antialiased;
         color: #121314;
     }
+
     p {
         font-size: 1.6em;
         font-weight: 300;
         line-height: 1.4;
         max-width: 28em;
     }
+
     .body_text .note {
         padding-left: 20px;
         font-size: 1.2em;
     }
+
     a {
         text-decoration: none;
         white-space: nowrap;
         color: #121314;
         position: relative;
     }
+
     .body_text {
         padding: 5vh 10vw;
     }
+
     .body_text p {
         font-size: 1.6em;
         font-weight: 300;
         line-height: 1.4;
         max-width: 60em;
     }
+
     .body_text a:after {
         content: '';
         position: absolute;
@@ -50,71 +57,84 @@
         background-color: #a03939;
         opacity: 30%;
     }
+
     .body_text a:hover:after {
         top: 0%;
     }
-    
+
     li {
         list-style: none;
     }
-  
+
     h1 {
         font-size: 4.5em;
         font-weight: 500;
         margin-bottom: 0;
     }
-    h3{
+
+    h3 {
         font-weight: 500;
         font-size: 2.2em;
         line-height: 1.4;
         max-width: 28em;
     }
-  
+
     /* NAVBAR STYLING STARTS */
     .navbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px; /*Padding around the words in the Nav Bar*/
+        padding: 10px;
+        /*Padding around the words in the Nav Bar*/
         background-color: rgb(37, 37, 37);
         color: #fff;
-        position: sticky; /*Sticks the Nav Bar to one specific position regardless of scroll*/
-        top: 0; /*Selects the top of the page as the specific position*/
+        position: sticky;
+        /*Sticks the Nav Bar to one specific position regardless of scroll*/
+        top: 0;
+        /*Selects the top of the page as the specific position*/
         z-index: 1000;
     }
+
     .nav-links a {
         color: #fff;
     }
+
     /* LOGO/Signature */
     .logo {
         font-size: 40px;
-        font-family: 'Dawning of a New Day', cursive; 
+        font-family: 'Dawning of a New Day', cursive;
         font-weight: bold;
 
     }
+
     /* NAVBAR MENU */
     .menu {
         display: flex;
         gap: 1em;
         font-size: 24px;
     }
+
     .menu li:hover {
         background-color: #a03939;
         border-radius: 5px;
         transition: 0.3s ease;
     }
+
     .menu li {
         padding: 5px 14px;
     }
+
     /* DROPDOWN MENU */
     .interests {
-        position: relative; 
-        transition: 0.3s ease; 
+        position: relative;
+        transition: 0.3s ease;
     }
+
     .dropdown {
         background-color: rgb(37, 37, 37);
         padding: 1em 0;
-        position: absolute; /*WITH RESPECT TO PARENT*/
+        position: absolute;
+        /*WITH RESPECT TO PARENT*/
         /*display: none;*/
         opacity: 0%;
         border-radius: 10px;
@@ -122,32 +142,38 @@
         transition: 0.3s ease;
         visibility: hidden;
     }
-    .dropdown li + li {
+
+    .dropdown li+li {
         margin-top: 10px;
         transition: 0.3s ease;
     }
+
     .dropdown li {
         padding: 0.5em 1em;
         width: 8em;
         text-align: center;
         transition: 0.3s ease;
     }
+
     .dropdown li:hover {
-        background-color: #a03939;;
+        background-color: #a03939;
+        ;
         transition: 0.3s ease;
     }
+
     .interests:hover .dropdown {
         /*display: block;*/
         opacity: 100%;
         transition: 0.3s ease;
         visibility: visible;
     }
-  
+
     /*RESPONSIVE NAVBAR MENU STARTS*/
     /* CHECKBOX HACK */
-    input[type=checkbox]{
+    input[type=checkbox] {
         display: none;
-    } 
+    }
+
     /*HAMBURGER MENU*/
     .hamburger {
         display: none;
@@ -157,59 +183,64 @@
 
     /* APPLYING MEDIA QUERIES */
 
-    .body_text .left, 
+    .body_text .left,
     .image .left {
         text-align: left;
     }
 
-    .body_text .right, 
+    .body_text .right,
     .image .right {
         text-align: right;
     }
 
-    .body_text .center, 
+    .body_text .center,
     .image .center {
         text-align: center;
     }
+
     .grouping {
-        padding-top:10%;
+        padding-top: 10%;
         width: 100%;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
+
     .grouping .resume_category {
         font-weight: 800;
         font-size: 32px;
         line-height: 1.4;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
-    .grouping .degree, 
-    .grouping .certification, 
-    .grouping .skills_interests, 
+
+    .grouping .degree,
+    .grouping .certification,
+    .grouping .skills_interests,
     .grouping .job_title {
         font-weight: 600;
         font-size: 26px;
         line-height: 1.4;
         padding-top: 2%;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
-    .grouping .school, 
-    .grouping .issuer, 
+
+    .grouping .school,
+    .grouping .issuer,
     .grouping .employer {
         font-weight: 500;
         font-size: 22px;
         line-height: 1.4;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
+
     .grouping .date {
         font-weight: 500;
         font-size: 18px;
         line-height: 1.4;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
 
     .grouping li {
@@ -230,23 +261,23 @@
         padding-bottom: 1%;
     }
 
-    .grouping .degree_notes, 
-    .grouping .cert_notes, 
+    .grouping .degree_notes,
+    .grouping .cert_notes,
     .grouping .interest_notes,
     .grouping .duties {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.4;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
 
     .grouping .cert_sub_notes {
         font-weight: 500;
         font-size: 12px;
         line-height: 1.4;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
         padding-left: 3%;
     }
 
@@ -254,227 +285,216 @@
         font-weight: 800;
         font-size: 32px;
         line-height: 1.4;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
 
     #resume_h3 {
         font-weight: 600;
         font-size: 26px;
         line-height: 1.4;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
 
     #resume_p {
         font-weight: 500;
         font-size: 18px;
         line-height: 1.4;
-        max-width:100%;
-        min-width:100%;
+        max-width: 100%;
+        min-width: 100%;
     }
 
+    /*Board Game Geek*/
     #BGGWidget {
         padding-top: 20px;
         padding-bottom: 20px;
+        width: 100%;
     }
 
+    .BGGwrapper {
+        border: none;
+        margin: 0 auto;
+        width: 100%;
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BGGheader {
+        background-color: white;
+        color: #121314;
+        padding: 2px;
+        width: 100%;
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+
+    .BGGheader a {
+        white-space: nowrap;
+        position: relative;
+        color: rgb(247, 14, 14);
+        text-decoration: none;
+    }
+
+    .BGGheader a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .BGGheader a:visited {
+        color: lightblue;
+        text-decoration: none;
+    }
+
+    .BGGprovided {
+        background-color: white;
+        color: #121314;
+        text-align: center;
+        clear: both;
+        padding: 2px;
+        display: block;
+        width: 100%;
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+
+    .BGGprovided a {
+        color: rgb(247, 14, 14);
+        text-decoration: none;
+    }
+
+    .BGGprovided a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .BGGprovided a:visited {
+        color: rgb(247, 14, 14);
+        text-decoration: none;
+    }
+
+    .BGGitem {
+        text-align: center;
+        clear: both;
+        margin: 5% auto;
+        width: 100%;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .BGGitem img {
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:auto;
+        padding-right:auto;
+        border-radius: 7px;
+        justify-content: center;
+    }
+
+    .BGGtitle {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.4;
+        width: 100%;
+    }
+
+    .BGGtitle a {
+        color: #22344B;
+        text-decoration: none;
+    }
+
+    .BGGtitle a:hover {
+        color: lightblue;
+        text-decoration: none;
+    }
+
+    .BGGtitle a:visited {
+        color: #22344B;
+        text-decoration: none;
+    }
+
+    /*Pens For A Cause logo on Resume page*/
     #PFAC {
         width: 30%;
         border-radius: 10px;
     }
 
+    /*All header images*/
     .header_image {
         width: 100%;
         height: auto;
     }
 
     /*Disc Golf Tables*/
-.styled-table {
-    border-radius: 25px;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    border-radius: 5px 5px 0px 0px;
-    overflow: hidden;
-    text-align: center;
-    float: left;
-    width: 100%;
-}
-
-.styled-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: center;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
-
-/*Google Maps*/
-.Google-Maps iframe {
-    margin: 25px 0;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    width:50%;
-}
-
-/*YouTube Videos*/
-.YouTube {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-
-}
-.YouTube iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.portrait_div {
-    width:100%;
-}
-
-.front_portrait {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:25%;
-    border-radius: 10px;
-}
-
-.gallery_container {
-    padding: 5vh 10vw;
-}
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.image-gallery li {
-    height: 300px;
-    cursor: pointer;
-    position: relative;
-}
-
-.image-gallery > li {
-    flex-grow: 1;
-  }
-
-.image-gallery li img {
-    object-fit: cover;
-    width: 100%;
-    height: 90%;
-    vertical-align: middle;
-    border-radius: 5px;
-}
-.bottom_AI {
-    padding-top: 0;
-}
-
-#issMap { 
-    height: 700px; 
-    padding: 0 10vw;
-    margin: 0 auto 10% auto;
-    border-radius: 10px;
-}
-
-#issMapContainer {
-    max-width: 1000px;
-}
-
-#coordinatesContainer {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#coordLabels {
-    max-width: 30%;
-    margin-right: 0;
-    display: inline-block;
-}
-
-#coordNumbers {
-    max-width: 30%;
-    display: inline-block;
-    margin-left: auto;
-}
-
-#coordNumbers p {
-    text-align: right;
-}
-
-#coordRow {
-    width:100%;
-}
-
-/*Screens smaller than 768px (tablet size and below)*/
-@media (max-width: 768px) {
-    .menu { 
-        display:none;
-        position: absolute;
-        background-color:rgb(37, 37, 37); 
-        right: 0;
-        left: 0;
+    .styled-table {
+        border-radius: 25px;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-radius: 5px 5px 0px 0px;
+        overflow: hidden;
         text-align: center;
-        padding: 16px 0;
+        float: left;
+        width: 100%;
     }
-    .menu li:hover {
-        display: inline-block;
-        background-color:#a03939;
-        transition: 0.3s ease;
+
+    .styled-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: center;
     }
-    .menu li + li {
-        margin-top: 12px;
+
+    .styled-table th,
+    .styled-table td {
+        padding: 12px 15px;
     }
-    input[type=checkbox]:checked ~ .menu{
-        display: block;
+
+    .styled-table tbody tr {
+        border-bottom: 1px solid #dddddd;
     }
-    .hamburger {
-        display: block;
+
+    .styled-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
     }
-    .dropdown {
-        left: 50%;
-        top: 30px;
-        transform: translateX(35%);
-        transition: 0.3s ease;
-        display:none;
+
+    .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
     }
-    .dropdown li:hover {
-        background-color: #a03939;
-        transition: 0.3s ease;
+
+    .styled-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
     }
+
+    /*Google Maps*/
+    .Google-Maps iframe {
+        margin: 25px 0;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        width: 50%;
+    }
+
+    /*YouTube Videos*/
+    .YouTube {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        height: 0;
+
+    }
+
     .YouTube iframe {
         position: absolute;
         top: 0;
@@ -483,33 +503,171 @@
         height: 100%;
         border-radius: 10px;
     }
-    .Google-Maps iframe {
-        margin: 25px 0;
-        overflow: hidden;
-        border-radius: 5px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        width:100%;
+
+    .portrait_div {
+        width: 100%;
     }
+
     .front_portrait {
-        width:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
         border-radius: 10px;
     }
-    #issMap { 
-        height: 400px; 
+
+    .gallery_container {
+        padding: 5vh 10vw;
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .image-gallery .img_container {
+        height: 300px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .image-gallery>.img_container {
+        flex-grow: 1;
+    }
+
+    .image-gallery .img_container img {
+        object-fit: cover;
+        width: 100%;
+        height: 90%;
+        vertical-align: middle;
+        border-radius: 5px;
+    }
+
+    /*Div that contains all text at the bottom of the AI page*/
+    .bottom_AI {
+        padding-top: 0;
+    }
+
+    /*Map that shows where the ISS is*/
+    #issMap {
+        height: 700px;
         padding: 0 10vw;
         margin: 0 auto 10% auto;
         border-radius: 10px;
     }
+
+    #issMapContainer {
+        max-width: 1000px;
+    }
+
+    #coordinatesContainer {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #coordLabels {
-        max-width: 100%;
+        max-width: 30%;
         margin-right: 0;
         display: inline-block;
     }
-    
+
     #coordNumbers {
-        max-width: 100%;
+        max-width: 30%;
         display: inline-block;
         margin-left: auto;
     }
-}
 
+    #coordNumbers p {
+        text-align: right;
+    }
+
+    #coordRow {
+        width: 100%;
+    }
+
+    /*Screens smaller than 768px (tablet size and below)*/
+    @media (max-width: 768px) {
+        .menu {
+            display: none;
+            position: absolute;
+            background-color: rgb(37, 37, 37);
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 16px 0;
+        }
+
+        .menu li:hover {
+            display: inline-block;
+            background-color: #a03939;
+            transition: 0.3s ease;
+        }
+
+        .menu li+li {
+            margin-top: 12px;
+        }
+
+        input[type=checkbox]:checked~.menu {
+            display: block;
+        }
+
+        .hamburger {
+            display: block;
+        }
+
+        .dropdown {
+            left: 50%;
+            top: 30px;
+            transform: translateX(35%);
+            transition: 0.3s ease;
+            display: none;
+        }
+
+        .dropdown li:hover {
+            background-color: #a03939;
+            transition: 0.3s ease;
+        }
+
+        .YouTube iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .Google-Maps iframe {
+            margin: 25px 0;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            width: 100%;
+        }
+
+        .front_portrait {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        #issMap {
+            height: 400px;
+            padding: 0 10vw;
+            margin: 0 auto 10% auto;
+            border-radius: 10px;
+        }
+
+        #coordLabels {
+            max-width: 100%;
+            margin-right: 0;
+            display: inline-block;
+        }
+
+        #coordNumbers {
+            max-width: 100%;
+            display: inline-block;
+            margin-left: auto;
+        }
+    }
