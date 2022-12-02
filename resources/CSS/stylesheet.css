@@ -114,13 +114,19 @@
         font-size: 24px;
     }
 
-    .menu li:hover {
+    .menu .dropdown_item:hover {
         background-color: #a03939;
         border-radius: 5px;
         transition: 0.3s ease;
     }
 
-    .menu li {
+    .menu .menu_item:hover {
+        background-color: #a03939;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    .menu div {
         padding: 5px 14px;
     }
 
@@ -143,21 +149,20 @@
         visibility: hidden;
     }
 
-    .dropdown li+li {
+    .dropdown div+div {
         margin-top: 10px;
         transition: 0.3s ease;
     }
 
-    .dropdown li {
+    .dropdown div {
         padding: 0.5em 1em;
         width: 8em;
         text-align: center;
         transition: 0.3s ease;
     }
 
-    .dropdown li:hover {
+    .dropdown div:hover {
         background-color: #a03939;
-        ;
         transition: 0.3s ease;
     }
 
@@ -178,6 +183,8 @@
     .hamburger {
         display: none;
         font-size: 24px;
+        -webkit-user-select: none;
+        -ms-user-select: none;
         user-select: none;
     }
 

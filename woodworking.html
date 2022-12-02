@@ -15,6 +15,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="resources/CSS/stylesheet.css" />
+  <link href="resources/CSS/lightbox.css" rel="stylesheet" />
+  <script src="resources/JS/lightbox-plus-jquery.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
@@ -26,43 +28,43 @@
     <!-- LOGO -->
     <div class="logo">Warren Morrison</div>
     <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
+    <div class="nav-links">
       <!-- USING CHECKBOX HACK -->
       <input type="checkbox" id="checkbox_toggle" />
       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       <!-- NAVIGATION MENUS -->
       <div class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li class="interests">
+        <div class="menu_item"><a href="index.html">Home</a></div>
+        <div class="menu_item"><a href="about.html">About</a></div>
+        <div class="menu_item"><a href="resume.html">Resume</a></div>
+        <div class="interests menu_item">
           <a href="WhoAmI.html">Who am I?</a>
           <!-- DROPDOWN MENU -->
-          <ul class="dropdown">
-            <li><a href="AI.html">AI<br>Enthusiast</a></li>
-            <li><a href="space.html">Astrophile</a></li>
-            <li><a href="audiophile.html">Audiophile</a></li>
-            <li><a href="boardgames.html">Board<br>Gamer</a></li>
-            <li><a href="coffee.html">Coffee<br>Aficionado</a></li>
-            <li><a href="discgolf.html">Disc<br>Golfer</a></li>
-            <li><a href="dnd.html">D&D<br>Player</a></li>
-            <li><a href="technologist.html">Technologist</a></li>
-            <li><a href="videogames.html">Video<br>Gamer</a></li>
-            <li><a href="woodworking.html">Woodworker</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
+          <div class="dropdown">
+            <div class="dropdown_item"><a href="AI.html">AI<br>Enthusiast</a></div>
+            <div class="dropdown_item"><a href="space.html">Astrophile</a></div>
+            <div class="dropdown_item"><a href="audiophile.html">Audiophile</a></div>
+            <div class="dropdown_item"><a href="boardgames.html">Board<br>Gamer</a></div>
+            <div class="dropdown_item"><a href="coffee.html">Coffee<br>Aficionado</a></div>
+            <div class="dropdown_item"><a href="discgolf.html">Disc<br>Golfer</a></div>
+            <div class="dropdown_item"><a href="dnd.html">D&D<br>Player</a></div>
+            <div class="dropdown_item"><a href="technologist.html">Technologist</a></div>
+            <div class="dropdown_item"><a href="videogames.html">Video<br>Gamer</a></div>
+            <div class="dropdown_item"><a href="woodworking.html">Woodworker</a></div>
+          </div>
+        </div>
+        <div class="menu_item"><a href="contact.html">Contact</a></div>
       </div>
-    </ul>
+      </ul>
   </nav>
 
   <!-- Beginning of page content -->
 
-  <img src="resources/images/woodworking_edited.png" class="header_image">
+  <img src="resources/images/woodworking_edited.png" alt="woodworking bench" class="header_image">
   <!-- Content wrapper -->
   <div class="body_text">
     <h1>
-      Hello!
+      Woodworker
     </h1>
     <br>
     <h3>
@@ -74,15 +76,99 @@
     </p>
     <br>
     <p>
-      I'm also a woodworker. Once this page is finished, it will be designed for you to see the woodworking side of me.
-      Ideally, you'll get insights into the projects that I'm currently working on, along with highlights from completed
-      projects.
+      I'm also a woodworker. After extended periods of time behind a computer screen, I find the art of woodworking to
+      be a fantastic change of pace. While I thoroughly enjoy being a technologist, nothing that I do with tech will
+      exercise my sense of touch. As a hobby, this art provides me with a sense of fulfillment that I otherwise lack.
+    </p>
+    <br>
+    <p>
+      Over the years, I've handcrafted everything from bookcases to shoe benches to tables to pens. Unfortunately, I did
+      not take pictures of everything that I made. Recently, though, I've begun to rectify that! As I build, I now
+      consider photographing the finished work as the final step of any project.  Once this page is finished, it will be 
+      designed to share those pictures with you! 
     </p>
     <br>
     <p>
       Are you a sawdust manufacturer, too? <a href="contact.html">Let me know</a>!
     </p>
+    <br>
+    <p>
+      Until this page is finished, check out a few of the many pens I've made over the years:
+    </p>
   </div>
+
+  <!-- Image gallery container -->
+  <div class="gallery_container">
+    <!-- Image gallery -->
+    <div class="image-gallery">
+      <!-- Image container -->
+      <div class="img_container">
+        <a href="resources/images/DSC_0230.JPG" data-lightbox="AI"><img src="resources/images/DSC_0230.JPG"
+            alt="Camelthorn Continental Chrome Pen" class="AI_image" /></a>
+        <div class="overlay"><span>Camelthorn Continental Chrome Pen</span></div>
+      </div>
+      <!-- Image container -->
+      <div class="img_container">
+        <a href="resources/images/DSC_0242.JPG" data-lightbox="AI"><img src="resources/images/DSC_0242.JPG"
+            alt="Jack Daniels Whiskey Barrel Sierra Platinum Pen" class="AI_image" /></a>
+        <div class="overlay"><span>Jack Daniels Whiskey Barrel Sierra Platinum Pen</span></div>
+      </div>
+      <!-- Image container -->
+      <div class="img_container">
+        <a href="resources/images/DSC_0169.JPG" data-lightbox="AI"><img src="resources/images/DSC_0169.JPG"
+            alt="Pasta Noodle Cigar Chrome Pen" class="AI_image" /></a>
+        <div class="overlay"><span>Pasta Noodle Cigar Chrome Pen</span></div>
+      </div>
+      <!-- Image container -->
+      <div class="img_container">
+        <a href="resources/images/DSC_0168.JPG" data-lightbox="AI"><img src="resources/images/DSC_0168.JPG"
+            alt="African Padauk Continental Chrome Pen" class="AI_image_smaller" /></a>
+        <div class="overlay"><span>African Padauk Continental Chrome Pen</span></div>
+      </div>
+      <!-- Image container -->
+      <div class="img_container">
+        <a href="resources/images/DSC_0227.JPG" data-lightbox="AI"><img src="resources/images/DSC_0227.JPG"
+            alt="Atlantic City Boardwalk Platinum Sierra Pen" class="AI_image_smaller" /></a>
+        <div class="overlay"><span>Atlantic City Boardwalk Platinum Sierra Pen</span></div>
+      </div>
+      <!-- Image container -->
+      <div class="img_container">
+        <a href="resources/images/DSC_0165.JPG" data-lightbox="AI"><img src="resources/images/DSC_0165.JPG"
+            alt="Cocobolo Slimline Gold Pen" class="AI_image" /></a>
+        <div class="overlay"><span>Cocobolo Slimline Gold Pen"</span></div>
+      </div>
+      <!-- Image container -->
+      <div class="img_container">
+        <a href="resources/images/DSC_0161.JPG" data-lightbox="AI"><img src="resources/images/DSC_0161.JPG"
+            alt="Pink Ivory Platinum Vertex" class="AI_image_smaller" /></a>
+        <div class="overlay"><span>Pink Ivory Platinum Vertex</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="body_text bottom_AI">
+    <p>
+      Every one of these pens was meticulously handcrafted by me. The barrel of the pens started off as a solid,
+      rectangular piece of
+      wood (or acrylic, as is the case with the pasta pen). I cut the wood to size, delicately drilled a hole through
+      the center for the ink and pen mechanism, and then carved the wood on a lathe (a machine that spins the wood very
+      fast). After carving it to size, I applied a protective finish and assembled the parts together. This is
+      frequently a time-consuming process, but one that I certainly enjoy.
+    </p>
+    <br>
+    <p>
+      Did you note the image of a workbench at the very top of this page? That image was created by an AI! If that
+      intrigues you as much as it does me, take a look at my <a href="AI.html">AI enthusiast</a> page!
+    </p>
+  </div>
+  <script>
+    lightbox.option({
+      'alwaysShowNavOnToughDevices': true,
+      'fadeDuration': 300,
+      'imageFadeDuration': 300,
+      'resizeDuration': 300,
+    })
+  </script>
+
 </body>
 
 </html>
