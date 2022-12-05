@@ -96,7 +96,7 @@
                     <p>Latitude:</p>
                 </div>
                 <div id="coordNumbers">
-                    <p><span id="lat"></span></p>
+                    <p><span id="lat"></span>°</p>
                 </div>
             </div>
             <div id="coordRow">
@@ -104,7 +104,7 @@
                     <p>Longitude:</p>
                 </div>
                 <div id="coordNumbers">
-                    <p><span id="lon"></span></p>
+                    <p><span id="lon"></span>°</p>
                 </div>
             </div>
         </div>
@@ -147,8 +147,8 @@
                 mymap.setView([latitude, longitude], 2);
                 firstTime = false;
             }
-            document.getElementById('lat').textContent = latitude.toFixed(2);
-            document.getElementById('lon').textContent = longitude.toFixed(2);
+            document.getElementById('lat').textContent = latitude.toFixed(3);
+            document.getElementById('lon').textContent = longitude.toFixed(3);
         }
 
         getISS();
