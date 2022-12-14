@@ -43,6 +43,3 @@ async function getISS() {
     document.getElementById('lon').textContent = longitude.toFixed(3);
 }
 
-getISS();
-
-setInterval(getISS, 5000);
