@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 // Making a map and tiles
 const mymap = L.map('issMap').setView([0, 0], 6);
 const attribution =
@@ -43,9 +45,12 @@ async function getISS() {
     document.getElementById('lon').textContent = longitude.toFixed(3);
 }
 
-const test_url = "https://portfolio-site-back-end.herokuapp.com/"
+const test_url = "https://portfolio-site-back-end.herokuapp.com/" //Added for test
 
-async function getTest() {
+//Added for test
+async function getTest() { 
     const responseTest = await fetch(test_url);
-    print(responseTest);
+    const data = await response.json();
+    console.log(responseTest);
+    console.log(data); 
 }
