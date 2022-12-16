@@ -43,3 +43,9 @@ async function getISS() {
     document.getElementById('lon').textContent = longitude.toFixed(3);
 }
 
+const test_url = "https://portfolio-site-back-end.herokuapp.com/"
+
+async function getTest() {
+    const responseTest = await fetch(test_url);
+    print(responseTest);
+}
