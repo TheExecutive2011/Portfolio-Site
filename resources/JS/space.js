@@ -50,7 +50,7 @@ const test_url = "https://portfolio-site-back-end.herokuapp.com/test" //Added fo
 //Added for test
 async function getTest() { 
     const responseTest = await fetch(test_url);
-    const data = await response.json();
+    const data = await responseTest.json();
     console.log(responseTest);
     console.log(data); 
 }
