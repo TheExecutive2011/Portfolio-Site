@@ -1,4 +1,5 @@
-const { response } = require("express");
+//const { response } = require("express");
+import express from 'express';
 
 // Making a map and tiles
 const mymap = L.map('issMap').setView([0, 0], 6);
