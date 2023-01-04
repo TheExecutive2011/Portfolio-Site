@@ -1,6 +1,7 @@
 const g_maps_url = "https://portfolio-site-back-end.herokuapp.com/api/maps"
 
-fetch(g_maps_url)
+async function getGMaps() {
+    fetch(g_maps_url)
   .then(response => response.text())
   .then(iframe => {
     document.getElementById('gMaps').innerHTML = iframe;
@@ -8,3 +9,5 @@ fetch(g_maps_url)
   .catch(error => {
     console.error(error);
   });
+}
+
