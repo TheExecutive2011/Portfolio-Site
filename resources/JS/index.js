@@ -1,3 +1,10 @@
+const g_maps_url = "https://portfolio-site-back-end.herokuapp.com/api/maps"
 
-
-const backend = 'https://portfolio-site-back-end.vercel.app/  /v1/satellites/25544';
+fetch(g_maps_url)
+  .then(response => response.text())
+  .then(iframe => {
+    document.getElementById('gMaps').innerHTML = iframe;
+  })
+  .catch(error => {
+    console.error(error);
+  });

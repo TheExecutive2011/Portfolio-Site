@@ -15,11 +15,12 @@
   <!-- Sets viewport width -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- CSS -->
-  <link rel="stylesheet" href="resources/CSS/stylesheet.css"  type="text/css"/>
+  <link rel="stylesheet" href="resources/CSS/stylesheet.css" type="text/css" />
   <!-- Google API font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet"
+    type="text/css">
   <!-- Page title -->
   <title>WM - Disc Golfer</title>
 </head>
@@ -252,14 +253,9 @@
         </tbody>
       </table>
       <p>
-        Want to try this course out for yourself? Here is where it's located:
+        Want to try this course out for yourself? Here is where it is located:
       </p>
-      <div class="Google-Maps">
-        <iframe alt="Map location for the last place that I played disc golf" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdj-4U9O4Ekx6qdJwIVHjZKRfVEg2cf-o&q=place_id:ChIJL45FFkMjVIgRXmjFRiBBxuE">
-        </iframe>
-      </div>
+      <div id="gMaps" class="Google-Maps"></div>
       <br>
       <h3>
         Not quite sure what disc golf is?
@@ -302,6 +298,12 @@
       </p>
     </div>
   </div>
+  <script src="resources/JS/index.js"></script>
+  <script>
+    getISS();
+    setInterval(getISS, 5000);
+    getTest();
+  </script>
 </body>
 
 </html>
