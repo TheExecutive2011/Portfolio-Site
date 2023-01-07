@@ -1,0 +1,39 @@
+/* Animate the size, inside */
+.fill:hover,
+.fill:focus {
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+/* All button elements */
+button {
+    /* initial text and border color */
+    color: #a03939;
+    /* initial background color */
+    background-color: white;
+    transition: .25s;
+    border: 2px solid;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    border-radius: 30px;
+}
+
+button:hover,
+button:focus {
+    border-color: var(--hover);
+    /* hover text and border color */
+    color: #fff;
+    /* hover background color */
+    background-color: #a03939;
+}
+
+/* Button wrapper div */
+.buttons {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+}

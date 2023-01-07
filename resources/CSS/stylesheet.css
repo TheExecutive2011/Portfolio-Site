@@ -45,7 +45,7 @@
         max-width: 60em;
     }
 
-    .body_text a:after {
+    .link:after {
         content: '';
         position: absolute;
         z-index: -1;
@@ -58,7 +58,7 @@
         opacity: 30%;
     }
 
-    .body_text a:hover:after {
+    .link:hover:after {
         top: 0%;
     }
 
@@ -206,7 +206,7 @@
     }
 
     .grouping {
-        padding-top: 10%;
+        padding-top: 5%;
         width: 100%;
         max-width: 100%;
         min-width: 100%;
@@ -324,7 +324,7 @@
         margin: 0 auto;
         width: 100%;
         background-color: white;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -389,17 +389,17 @@
         clear: both;
         margin: 5% auto;
         width: 100%;
-        display:flex;
-        flex-wrap:wrap;
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
     }
 
     .BGGitem img {
-        margin-left:auto;
-        margin-right:auto;
-        padding-left:auto;
-        padding-right:auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
         border-radius: 7px;
         justify-content: center;
     }
@@ -594,6 +594,52 @@
         width: 100%;
     }
 
+    /* Buttons */
+
+    
+    /* Animate the size, inside */
+    .fill:hover,
+    .fill:focus {
+        box-shadow: inset 0 0 0 2em var(--hover);
+    }
+
+    /* All button elements */
+    button {
+        /* initial text and border color */
+        color: white;
+        /* initial background color */
+        background-color: #a03939;
+        transition: .25s;
+        border: 2px solid;
+        line-height: 1;
+        margin: 0.5em;
+        padding: 1em 2em;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    button:hover,
+    button:focus {
+        border-color: var(--hover);
+        /* hover text and border color */
+        color: #a03939;
+        /* hover background color */
+        background-color: white;
+    }
+
+    /* Button wrapper div */
+    .buttons {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     /*Screens smaller than 768px (tablet size and below)*/
     @media (max-width: 768px) {
         .menu {
@@ -676,5 +722,11 @@
             max-width: 100%;
             display: inline-block;
             margin-left: auto;
+        }
+        .grouping {
+            padding-top: 10%;
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
         }
     }
