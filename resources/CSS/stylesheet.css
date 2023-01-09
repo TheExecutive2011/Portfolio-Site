@@ -626,6 +626,7 @@
         color: #a03939;
         /* hover background color */
         background-color: white;
+        cursor: pointer;
     }
 
     /* Button wrapper div */
