@@ -1,0 +1,287 @@
+.tech_flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.tech {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/html5.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#html {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/html5.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22em 30em;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#css {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/css3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22em 30em;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#js {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/JavaScript-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#api {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/API.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#desktopBuilds {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/desktop-icon-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#raspberryPi {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/RaspberryPi-Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#sql {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/SQL.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#jira {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/Jira-logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#git {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/Git-logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#github {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/github-logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#java {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/java-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#python {
+    position: relative;
+    width: 22em;
+    height: 30em;
+    background: url("../images/python-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.tech * {
+    position: relative;
+    z-index: 2;
+}
+
+.tech:hover .color-overlay {
+    background: rgba(7, 9, 10, 0.8);
+}
+
+.tech:hover .info {
+    bottom: -1em;
+    opacity: 1;
+}
+
+.tech:hover .tech_headline {
+    opacity: 1;
+}
+
+.tech:hover .intro {
+    opacity: 1;
+}
+
+.tech,
+.color-overlay {
+    border-radius: 0.7em;
+}
+
+.color-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.7s background;
+    z-index: 1;
+}
+
+.title-box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.tech_headline {
+    opacity: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    transition: opacity 0.3s, bottom 0.3s;
+}
+
+.tech_headline on:hover {
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.intro {
+    opacity: 0;
+    
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 18px;
+}
+
+.intro on:hover {
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 18px;
+}
+
+
+.info {
+    font-family: 'Droid Serif', serif;
+    font-size: 1.2em;
+    color: #ddd;
+    line-height: 1.1em;
+    padding: 0 2em;
+
+    position: relative;
+    bottom: -4em;
+    opacity: 0;
+    background: transparent;
+    transition: opacity 0.3s, bottom 0.3s;
+    text-align: center;
+}
+
+.footer {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10em;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    border-radius: 0 0 0.7em 0.7em;
+}
+
+.footer>.icon-holder {
+    position: absolute;
+    bottom: 0;
+    height: 3em;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0 2em;
+
+}
+

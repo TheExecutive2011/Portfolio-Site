@@ -304,7 +304,7 @@
         min-width: 100%;
     }
 
-    #resume_p {
+    .resume_p {
         font-weight: 500;
         font-size: 18px;
         line-height: 1.4;
@@ -641,6 +641,42 @@
         flex-wrap: wrap;
     }
 
+    details {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+        max-width: 60em;
+        padding-bottom: 2%;
+    }
+
+    .tech_group h3{
+        padding-bottom: 1%;
+    }
+
+    .body_text details h5 {
+        
+        padding-top: 10px;
+        padding-left: 5%;
+    }
+
+    .body_text details p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.4;
+        max-width: 60em;
+        padding-left: 10%;
+        padding-top: 10px;
+    }
+
+    details summary {
+        cursor: pointer;
+        padding-left: 1%;
+        background-color: #a03939;
+        color: white;
+        border-radius: 10px;
+        width: 20%;
+    }
+
     /*Screens smaller than 768px (tablet size and below)*/
     @media (max-width: 768px) {
         .menu {
@@ -729,5 +765,12 @@
             width: 100%;
             max-width: 100%;
             min-width: 100%;
+        }
+        details summary {
+            width: 60%;
+
+        }
+        details {
+            padding-bottom: 5%;
         }
     }
