@@ -22,6 +22,10 @@
         max-width: 28em;
     }
 
+    .indent {
+        padding-left: 5%;
+    }
+
     .body_text .note {
         padding-left: 20px;
         font-size: 1.2em;
@@ -77,6 +81,20 @@
         font-size: 2.2em;
         line-height: 1.4;
         max-width: 28em;
+    }
+
+    h5 {
+        font-weight: 500;
+        font-size: 1.6em;
+        line-height: 1.4;
+        max-width: 60em;
+    }
+
+    h6 {
+        font-weight: 400;
+        font-size: 1.6em;
+        line-height: 1.4;
+        max-width: 60em;
     }
 
     /* NAVBAR STYLING STARTS */
