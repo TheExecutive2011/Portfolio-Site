@@ -1,0 +1,256 @@
+ .skills {
+    width: 80%;
+    max-width: 90%;
+    padding-bottom: 5%;
+    margin: auto;
+    position: relative;
+ }
+
+ .lines {
+     height: 100%;
+     position: relative;
+ }
+
+ .line {
+     height: inherit;
+     width: 2px;
+     position: absolute;
+     background: rgba(230, 228, 228, 0.6);
+ }
+
+ .line.l-0 {
+     left: 0;
+ }
+
+ .line.l-25 {
+     left: 25%;
+ }
+
+ .line.l-50 {
+     left: 50%;
+ }
+
+ .line.l-75 {
+     left: 75%;
+ }
+
+ .line.l-100 {
+     left: calc(100% - 1px);
+ }
+
+ .line_label {
+     display: block;
+     width: 300px;
+     text-align: center;
+     position: absolute;
+     bottom: -20px;
+     right: -50px;
+ }
+
+ .line_label.title {
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+
+ .charts {
+    width: 100%;
+    height: 100%;
+}
+
+ .chart:not(:first-child) {
+     margin-top: 10px;
+ }
+
+ .chart-horiz {
+     overflow: hidden;
+ }
+
+ .chart_bar {
+     height: 30px;
+     margin-bottom: 10px;
+     background: linear-gradient(to left, #665e87, rgb(37, 37, 37), rgb(37, 37, 37), rgb(37, 37, 37));
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+     opacity: 0;
+     animation: 1s anim-lightspeed-in ease forwards;
+ }
+
+ /* Abilities Bars */
+ .chart-abilities .chart_bar:nth-of-type(1) {
+     animation-delay: 0.1s;
+ }
+
+ .chart-abilities .chart_bar:nth-of-type(2) {
+     animation-delay: 0.2s;
+ }
+
+ .chart-abilities .chart_bar:nth-of-type(3) {
+     animation-delay: 0.3s;
+ }
+
+ .chart-abilities .chart_bar:nth-of-type(4) {
+     animation-delay: 0.4s;
+ }
+
+ .chart-abilities .chart_bar:nth-of-type(5) {
+     animation-delay: 0.5s;
+ }
+
+ .chart-abilities .chart_bar:nth-of-type(6) {
+     animation-delay: 0.6s;
+ }
+
+ /* Saving Throws Bars */
+ .chart-saving_throws .chart_bar:nth-of-type(1) {
+     animation-delay: 0.7s;
+ }
+
+ .chart-saving_throws .chart_bar:nth-of-type(2) {
+     animation-delay: 0.8s;
+ }
+
+ .chart-saving_throws .chart_bar:nth-of-type(3) {
+     animation-delay: 0.9s;
+ }
+
+ .chart-saving_throws .chart_bar:nth-of-type(4) {
+     animation-delay: 1.0s;
+ }
+
+ .chart-saving_throws .chart_bar:nth-of-type(5) {
+     animation-delay: 1.2s;
+ }
+
+ .chart-saving_throws .chart_bar:nth-of-type(6) {
+     animation-delay: 1.3s;
+ }
+
+ /* Skills Bars */
+ .chart-skills_skills .chart_bar:nth-of-type(1) {
+     animation-delay: 1.4s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(2) {
+     animation-delay: 1.5s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(3) {
+     animation-delay: 1.6s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(4) {
+     animation-delay: 1.7s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(5) {
+     animation-delay: 1.8s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(6) {
+     animation-delay: 1.9s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(7) {
+     animation-delay: 2.0s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(8) {
+     animation-delay: 2.1s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(9) {
+     animation-delay: 2.2s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(10) {
+     animation-delay: 2.3s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(11) {
+     animation-delay: 2.4s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(12) {
+     animation-delay: 2.5s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(13) {
+     animation-delay: 2.6s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(14) {
+     animation-delay: 2.7s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(15) {
+     animation-delay: 2.8s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(16) {
+     animation-delay: 2.9s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(17) {
+     animation-delay: 3.0s;
+ }
+
+ .chart-skills_skills .chart_bar:nth-of-type(18) {
+     animation-delay: 3.1s;
+ }
+
+
+ /* Passive Senses Bars */
+ .chart-passive_senses .chart_bar:nth-of-type(1) {
+     animation-delay: 3.2s;
+ }
+
+ .chart-passive_senses .chart_bar:nth-of-type(2) {
+     animation-delay: 3.3s;
+ }
+
+ .chart-passive_senses .chart_bar:nth-of-type(3) {
+     animation-delay: 3.4s;
+ }
+
+
+ .chart_label {
+     padding-left: 10px;
+     line-height: 30px;
+     color: white;
+ }
+
+ .chart_value {
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px;
+    color: white;
+ }
+
+ .chart_titles {
+     text-align: center;
+ }
+
+ @keyframes anim-lightspeed-in {
+     0% {
+         transform: translateX(-200%);
+         opacity: 1;
+     }
+
+     100% {
+         transform: translateX(0);
+         opacity: 1;
+     }
+ }
+
+
+ @media (max-width: 768px) {
+     .line_label {
+         display: block;
+         width: 100px;
+         text-align: center;
+         position: absolute;
+         bottom: -20px;
+         right: -50px;
+     }
+ }

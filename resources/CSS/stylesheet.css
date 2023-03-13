@@ -26,6 +26,10 @@
         padding-left: 5%;
     }
 
+    .indent_twice {
+        padding-left: 10%;
+    }
+
     .body_text .note {
         padding-left: 20px;
         font-size: 1.2em;
@@ -659,6 +663,7 @@
         flex-wrap: wrap;
     }
 
+    /*
     details {
         font-size: 1.6em;
         font-weight: 300;
@@ -693,6 +698,50 @@
         color: white;
         border-radius: 10px;
         width: 20%;
+    }
+*/
+    .dnd_table {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+        max-width: 28em;
+        table-layout: auto;
+    }
+
+    .dnd_table tr:nth-child(odd) {
+        background-color: rgb(236, 235, 235);
+    }
+
+    .dnd_table_categories {
+        font-weight: 300;
+    }
+
+    .dnd_table td {
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    .dnd_portrait {
+        display: block;
+        width: 25%;
+        border-radius: 10px;
+    }
+
+    details {
+        cursor: pointer;
+    }
+
+    summary {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+
+    .dnd_ul li{
+        list-style-type: circle;
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.4;
     }
 
     /*Screens smaller than 768px (tablet size and below)*/
@@ -756,6 +805,11 @@
         }
 
         .front_portrait {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .dnd_portrait {
             width: 100%;
             border-radius: 10px;
         }
