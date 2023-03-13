@@ -744,7 +744,7 @@
         line-height: 1.4;
     }
 
-    /*Screens smaller than 768px (tablet size and below)*/
+    /*Screens smaller than 768px (tablet size and below) */
     @media (max-width: 768px) {
         .menu {
             display: none;
