@@ -744,6 +744,19 @@
         line-height: 1.4;
     }
 
+    .body_text .rev_header_small {
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.4;
+        max-width: 28em;
+    }
+
+    .album_art_review {
+        border-radius: 10px;
+        width: 30em;
+        
+    }
+
     /*Screens smaller than 768px (tablet size and below) */
     @media (max-width: 768px) {
         .menu {
@@ -844,5 +857,10 @@
         }
         details {
             padding-bottom: 5%;
+        }
+        .album_art_review {
+            border-radius: 10px;
+            width: 100%;
+            margin:auto;
         }
     }
