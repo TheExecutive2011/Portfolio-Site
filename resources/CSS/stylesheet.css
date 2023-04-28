@@ -757,6 +757,16 @@
         
     }
 
+    .vg_art_review {
+        border-radius: 10px;
+        max-width: 30em;
+        max-height: 30em;
+    }
+
+    .center_p {
+        margin: auto;
+    }
+
     /*Screens smaller than 768px (tablet size and below) */
     @media (max-width: 768px) {
         .menu {
