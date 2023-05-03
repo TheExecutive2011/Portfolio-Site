@@ -210,8 +210,6 @@
         user-select: none;
     }
 
-    /* APPLYING MEDIA QUERIES */
-
     .body_text .left,
     .image .left {
         text-align: left;
@@ -417,13 +415,69 @@
         justify-content: center;
     }
 
-    .BGGitem img {
+    .GameContainer {
+        width: 100%;
+    }
+
+    .BGGitem hr {
+        width: 100%;
+    }
+
+    .BGGitem .GameImageContainer img {
+        border-radius: 25px;
+        justify-content: center;
+        margin: auto;
+        padding: auto;
+    }
+
+    .GameImageContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 31vh;
+        height: 31vh;
         margin-left: auto;
         margin-right: auto;
         padding-left: auto;
         padding-right: auto;
-        border-radius: 7px;
         justify-content: center;
+    }
+
+    .bgg_image {
+        margin: 10px;
+        max-height: 30vh;
+        max-width: 30vh;
+    }
+
+    .BGGitem #collection-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .BGGitem #collection-list ul {
+
+    }
+
+    .BGGitem #collection-list li {
+        width: 30em;
+
+        margin: 20px;
+        padding: 1rem;
+        background-color: whitesmoke;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .BGGitem #collection-list li p {
+        width: 100%;
+        max-width: none;
+    }
+
+    .BGGitem #collection-list li h3 {
+        max-width: none;
     }
 
     .BGGtitle {
@@ -618,7 +672,7 @@
 
     /* Buttons */
 
-    
+
     /* Animate the size, inside */
     .fill:hover,
     .fill:focus {
@@ -737,7 +791,7 @@
         line-height: 1.4;
     }
 
-    .dnd_ul li{
+    .dnd_ul li {
         list-style-type: circle;
         font-size: 1.2em;
         font-weight: 300;
@@ -754,7 +808,7 @@
     .album_art_review {
         border-radius: 10px;
         width: 30em;
-        
+
     }
 
     .vg_art_review {
@@ -855,22 +909,26 @@
             display: inline-block;
             margin-left: auto;
         }
+
         .grouping {
             padding-top: 10%;
             width: 100%;
             max-width: 100%;
             min-width: 100%;
         }
+
         details summary {
             width: 60%;
 
         }
+
         details {
             padding-bottom: 5%;
         }
+
         .album_art_review {
             border-radius: 10px;
             width: 100%;
-            margin:auto;
+            margin: auto;
         }
     }

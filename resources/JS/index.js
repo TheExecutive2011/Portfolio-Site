@@ -40,80 +40,91 @@ async function getResume() {
 }
 
 async function getGames() {
-  try {
-    const bggData = new XMLHttpRequest();
-    bggData.onreadystatechange = function () {
-      if (bggData.readyState === XMLHttpRequest.DONE) {
-        if (bggData.status === 200) {
-          // success
-          const xmlData = bggData.responseXML;
-          // Get the list of items in the collection
-          const items = xmlData.getElementsByTagName('item');
-          // Get the list element
-          const collectionList = document.getElementById('collection-list');
-          // Iterate through the items and add them to the list
-          for (const item of items) {
-            console.log(item);
-          }
-
-
-          for (const item of items) {
-            // Get the name, year published, and image of the item
-            const name = item.getElementsByTagName('name')[0].textContent;
-            const year = item.getElementsByTagName('yearpublished')[0].textContent;
-            const image = item.getElementsByTagName('image')[0].textContent;
-            // Get the statistics for the item
-            const stats = item.getElementsByTagName('stats')[0];
-            const rating = stats.getElementsByTagName('rating')[0].getAttribute('value');
-            const usersRated = stats.getElementsByTagName('usersrated')[0].getAttribute('value');
-            const average = stats.getElementsByTagName('average')[0].getAttribute('value');
-            // Get the status and number of plays for the item
-            const status = item.getElementsByTagName('status')[0].getAttribute('own');
-            const owned = "No"
-            try {
-              if (status === 0) {
-                owned = "No";
-              }
-              else if (status === 1) {
-                owned = "Yes";
-              }
-            }
-            catch {
-              // error
-              console.error("Something went wrong with the ownership status.");
-            }
-            const numPlays = item.getElementsByTagName('numplays')[0].textContent;
-            // Create a new list item and add it to the list
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `
-              <img src="${image}" alt="${name}">
-              <h2>${name}</h2>
-              <p>Year Published: ${year}</p>
-              <p>Rating: ${rating}</p>
-              <p>Users Rated: ${usersRated}</p>
-              <p>Average Rating: ${average}</p>
-              <p>Do I own this game?: ${owned}</p>
-              <p>Number of Plays: ${numPlays}</p>
-            `;
-            collectionList.appendChild(listItem);
-          }
-        } 
-        
-        else {
-          // error
-          console.error(bggData.statusText);
-        }
+    try {
+      const collectionUrl = 'https://boardgamegeek.com/xmlapi/collection/theexecutive2011?played=1';
+      const playsUrl = 'https://boardgamegeek.com/xmlapi2/plays?username=theexecutive2011';
+  
+      const [collectionData, playsData] = await Promise.all([fetchXmlData(collectionUrl), fetchXmlData(playsUrl)]);
+  
+      const items = Array.from(collectionData.getElementsByTagName('item'));
+      const plays = Array.from(playsData.getElementsByTagName('play'));
+  
+      const mergedItems = items.map((item) => {
+        const objectid = item.getAttribute('objectid');
+        const relatedPlay = plays.find((play) => play.getElementsByTagName('item')[0].getAttribute('objectid') === objectid);
+        return { item, relatedPlay };
+      });
+  
+      mergedItems.sort((a, b) => {
+        const aDate = a.relatedPlay ? a.relatedPlay.getAttribute('date') : '-';
+        const bDate = b.relatedPlay ? b.relatedPlay.getAttribute('date') : '-';
+        return aDate < bDate ? 1 : aDate > bDate ? -1 : 0;
+      });
+  
+      const collectionList = document.getElementById('collection-list');
+      for (const { item, relatedPlay } of mergedItems) {
+        displayItem(item, relatedPlay, collectionList);
       }
-    };
-    //API 2
-    //bggData.open('GET', 'https://boardgamegeek.com/xmlapi2/plays?username=theexecutive2011');
-
-    //API 1
-    bggData.open('GET', 'https://boardgamegeek.com/xmlapi/collection/theexecutive2011?played=1');
-    bggData.send();
+    } catch (error) {
+      console.error('getGames() error:', error);
+    }
   }
-  catch {
-    console.log('getGames() error catch reached...successfully?')
-    console.error(error);
+  
+  function findRelatedItem(xmlData, objectid) {
+    const plays = xmlData.getElementsByTagName('play');
+    for (const play of plays) {
+      const item = play.getElementsByTagName('item')[0];
+      if (item.getAttribute('objectid') === objectid) {
+        return item;
+      }
+    }
+    return null;
   }
-}
+  
+  function displayItem(item, relatedPlay, collectionList) {
+    const name = item.getElementsByTagName('name')[0].textContent;
+    const year = item.getElementsByTagName('yearpublished')[0].textContent;
+    const image = item.getElementsByTagName('image')[0].textContent;
+    const stats = item.getElementsByTagName('stats')[0];
+    const rating = stats.getElementsByTagName('rating')[0].getAttribute('value');
+    const usersRated = stats.getElementsByTagName('usersrated')[0].getAttribute('value');
+    const average = stats.getElementsByTagName('average')[0].getAttribute('value');
+  
+    const numPlays = relatedPlay ? relatedPlay.getAttribute('quantity') : '0';
+    const date = relatedPlay ? relatedPlay.getAttribute('date') : 'Unknown';
+  
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+      <div class="GameContainer">
+        <div class="GameImageContainer">  
+          <img src="${image}" alt="${name}" class="bgg_image">
+        </div>
+        <h3>${name}</h3>
+        <p>Date: <i>${date}</i></p>
+        <p>Year Published: <i>${year}</i></p>
+        <p>My Total Number of Plays: <i>${numPlays}</i></p>
+        <p>My Rating: <i>${rating} / 10</i></p>
+        <p>Total Number of Ratings: <i>${usersRated}</i></p>
+        <p>Average Rating: <i>${average} / 10</i></p>
+        <br>
+      </div>
+    `;
+    collectionList.appendChild(listItem);
+  }
+  
+  async function fetchXmlData(url) {
+    try {
+      const response = await fetch(url);
+      if (response.status === 200) {
+        const textData = await response.text();
+        const parser = new DOMParser();
+        const xmlData = parser.parseFromString(textData, 'application/xml');
+        return xmlData;
+      } else {
+        throw new Error(`Error fetching data: ${response.statusText}`);
+      }
+    } catch (error) {
+      console.error('Error fetching XML data:', error);
+      throw error;
+    }
+  }

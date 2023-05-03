@@ -54,6 +54,47 @@
     background-color: rgba(112, 111, 111, 0.459);
 }
 
+/*BOARD GAME REVIEWS*/
+
+#SevenWonders:before {
+    background-image: url("../images/BoardGameArt/7Wonders.webp");
+}
+
+#BetrayalAHOTH:before {
+    background-image: url("../images/BoardGameArt/BetrayalAtHouseOnTheHill.webp");
+}
+
+#Botswana:before {
+    background-image: url("../images/BoardGameArt/Botswana.webp");
+}
+
+#Dominion:before {
+    background-image: url("../images/BoardGameArt/Dominion.webp");
+}
+
+#Kingdomino:before {
+    background-image: url("../images/BoardGameArt/Kingdomino.webp");
+}
+
+#Gloomhaven:before {
+    background-image: url("../images/BoardGameArt/Gloomhaven.webp");
+}
+
+#HarryPotterHogwartsBattle:before {
+    background-image: url("../images/BoardGameArt/HarryPotterHogwartsBattle.webp");
+}
+
+#LoveLetter:before {
+    background-image: url("../images/BoardGameArt/LoveLetter.webp");
+}
+
+#Patchwork:before {
+    background-image: url("../images/BoardGameArt/Patchwork.webp");
+}
+
+#SushiGo:before {
+    background-image: url("../images/BoardGameArt/SushiGo.webp");
+}
 
 /*VIDEO GAME REVIEWS*/
 
