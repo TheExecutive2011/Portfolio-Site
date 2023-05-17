@@ -110,6 +110,10 @@
     background-image: url("../images/TRPGArt/Characters/DnD/Bobbert.png");
 }
 
+#Bobby:before {
+    background-image: url("../images/TRPGArt/Characters/WeirdFrontiers/Bobby.png");
+}
+
 #Cyberpunk2020Character:before {
     background-image: url("../images/MerrickRavenfall.png");
 }
