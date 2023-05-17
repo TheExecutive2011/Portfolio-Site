@@ -1,0 +1,229 @@
+.chart_bar {
+    background: linear-gradient(to left,#f88abd, #1b2035, #1b2035, #1b2035);
+}
+
+.chart_label {
+    color: white;
+}
+
+.chart_value {
+    color: black;
+}
+
+#Intelligence {
+    width: 82%
+}
+
+#Reflexes {
+    width: 82%
+}
+
+#Cool {
+    width: 91%;
+}
+
+#TechnicalAbility {
+    width: 46%;
+}
+
+#Luck {
+    width: 46%;
+}
+
+#Attractiveness {
+    width: 100%;
+}
+
+#MovementAllowance {
+    width: 64%;
+}
+
+#Empathy {
+    width: 46%;
+}
+
+#BodyType {
+    width: 73%;
+}
+
+#SpecialAbility {
+    width: 64%;
+}
+
+#Interrogation {
+    width: 28%;
+}
+
+#Streetwise {
+    width: 55%;
+}
+
+#Perform {
+    width: 46%;
+}
+
+#Brawling {
+    width: 28%;
+}
+
+#Handgun {
+    width: 37%;
+}
+
+#PlayMusicalInstrument {
+    width: 46%;
+}
+
+#PersonalGrooming {
+    width: 37%;
+}
+
+#Intimidate {
+    width: 28%;
+}
+
+#AwarenessNotice {
+    width: 37%;
+}
+
+#Dance {
+    width: 19%;
+}
+
+#Rifle {
+    width: 28%;
+}
+
+#WardrobeStyle {
+    width: 64%;
+}
+
+#Oratory {
+    width: 28%;
+}
+
+#PersuasionFastTalk {
+    width: 64%;
+}
+
+#Composition {
+    width: 28%;
+}
+
+#DodgeEscape {
+    width: 19%;
+}
+
+#Stealth {
+    width: 46%;
+}
+
+@media (max-width: 768px) {
+    #Intelligence {
+        width: 90%
+    }
+
+    #Reflexes {
+        width: 90%
+    }
+
+    #Cool {
+        width: 95%;
+    }
+
+    #TechnicalAbility {
+        width: 70%;
+    }
+
+    #Luck {
+        width: 70%;
+    }
+
+    #Attractiveness {
+        width: 100%;
+    }
+
+    #MovementAllowance {
+        width: 80%;
+    }
+
+    #Empathy {
+        width: 70%;
+    }
+
+    #BodyType {
+        width: 85%;
+    }
+
+    #SpecialAbility {
+        width: 80%;
+    }
+
+    #Interrogation {
+        width: 60%;
+    }
+
+    #Streetwise {
+        width: 75%;
+    }
+
+    #Perform {
+        width: 70%;
+    }
+
+    #Brawling {
+        width: 60%;
+    }
+
+    #Handgun {
+        width: 65%;
+    }
+
+    #PlayMusicalInstrument {
+        width: 70%;
+    }
+
+    #PersonalGrooming {
+        width: 65%;
+    }
+
+    #Intimidate {
+        width: 60%;
+    }
+
+    #AwarenessNotice {
+        width: 65%;
+    }
+
+    #Dance {
+        width: 55%;
+    }
+
+    #Rifle {
+        width: 60%;
+    }
+
+    #WardrobeStyle {
+        width: 80%;
+    }
+
+    #Oratory {
+        width: 60%;
+    }
+
+    #PersuasionFastTalk {
+        width: 80%;
+    }
+
+    #Composition {
+        width: 60%;
+    }
+
+    #DodgeEscape {
+        width: 55%;
+    }
+
+    #Stealth {
+        width: 70%;
+    }
+}

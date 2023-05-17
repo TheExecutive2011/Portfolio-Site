@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../../../resources/CSS/barchart.css" type="text/css" />
     <link rel="stylesheet" href="../../../resources/CSS/review_cards.css" type="text/css" />
     <link rel="stylesheet" href="../../../resources/CSS/cardlayout.css" type="text/css" />
+    <link rel="stylesheet" href="../../../resources/CSS/Bob.css" type="text/css" />
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,7 +143,7 @@
             <div class="charts">
                 <div class="chart chart-abilities">
                     <ul class="chart-horiz">
-                        <li class="chart_bar" style="width: 82%;">
+                        <li class="chart_bar" id="Intelligence">
                             <span class="chart_label">
                                 Intelligence
                             </span>
@@ -150,7 +151,7 @@
                                 8
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 100%;">
+                        <li class="chart_bar" id="Reflexes">
                             <span class="chart_label">
                                 Reflexes
                             </span>
@@ -158,7 +159,7 @@
                                 8
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 100%;">
+                        <li class="chart_bar" id="Cool">
                             <span class="chart_label">
                                 Cool
                             </span>
@@ -166,7 +167,7 @@
                                 9
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 77.5%;">
+                        <li class="chart_bar" id="TechnicalAbility">
                             <span class="chart_label">
                                 Technical Ability
                             </span>
@@ -174,7 +175,7 @@
                                 4
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 73%;">
+                        <li class="chart_bar" id="Luck">
                             <span class="chart_label">
                                 Luck
                             </span>
@@ -182,7 +183,7 @@
                                 4
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 100%;">
+                        <li class="chart_bar" id="Attractiveness">
                             <span class="chart_label">
                                 Attractiveness
                             </span>
@@ -190,7 +191,7 @@
                                 10
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 77.5%;">
+                        <li class="chart_bar" id="MovementAllowance">
                             <span class="chart_label">
                                 Movement Allowance
                             </span>
@@ -198,7 +199,7 @@
                                 6
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 77.5%;">
+                        <li class="chart_bar" id="Empathy">
                             <span class="chart_label">
                                 Empathy
                             </span>
@@ -206,7 +207,7 @@
                                 4
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 77.5%;">
+                        <li class="chart_bar" id="BodyType">
                             <span class="chart_label">
                                 Body Type
                             </span>
@@ -226,13 +227,13 @@
         <div class="skills skills_skills">
             <div class="charts">
                 <div class="chart chart-skills_skills">
+                    <p>
+                        <em>Note: There are many more skills available in Cyberpunk 2020.  If it is not listed here, assume that there are zero points assigned to that skill.</em> 
+                    </p>
+                    <br>
+                    <br>
                     <ul class="chart--horiz">
-                        <p>
-                            <em>Note: There are many more skills available in Cyberpunk 2020.  If it is not listed here, assume that there are zero points assigned to that skill.</em> 
-                        </p>
-                        <br>
-                        <br>
-                        <li class="chart_bar" style="width: 72%;">
+                        <li class="chart_bar" id="SpecialAbility">
                             <span class="chart_label">
                                 Special Ability
                             </span>
@@ -240,7 +241,7 @@
                                 6
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 44%;">
+                        <li class="chart_bar" id="Interrogation">
                             <span class="chart_label">
                                 Interrogation
                             </span>
@@ -248,7 +249,7 @@
                                 2
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 65%;">
+                        <li class="chart_bar" id="Streetwise">
                             <span class="chart_label">
                                 Streetwise
                             </span>
@@ -256,7 +257,7 @@
                                 5
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 58%;">
+                        <li class="chart_bar" id="Perform">
                             <span class="chart_label">
                                 Perform
                             </span>
@@ -264,7 +265,7 @@
                                 4
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 44%;">
+                        <li class="chart_bar" id="Brawling">
                             <span class="chart_label">
                                 Brawling
                             </span>
@@ -272,7 +273,7 @@
                                 2
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 51%;">
+                        <li class="chart_bar" id="Handgun">
                             <span class="chart_label">
                                 Handgun
                             </span>
@@ -280,7 +281,7 @@
                                 3
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 58%;">
+                        <li class="chart_bar" id="PlayMusicalInstrument">
                             <span class="chart_label">
                                 Play Musical Instrument
                             </span>
@@ -288,7 +289,7 @@
                                 4
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 51%;">
+                        <li class="chart_bar" id="PersonalGrooming">
                             <span class="chart_label">
                                 Personal Grooming
                             </span>
@@ -296,7 +297,7 @@
                                 3
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 44%;">
+                        <li class="chart_bar" id="Intimidate">
                             <span class="chart_label">
                                 Intimidate
                             </span>
@@ -304,7 +305,7 @@
                                 2
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 51%;">
+                        <li class="chart_bar" id="AwarenessNotice">
                             <span class="chart_label">
                                 Awareness Notice
                             </span>
@@ -312,7 +313,7 @@
                                 3
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 37%;">
+                        <li class="chart_bar" id="Dance">
                             <span class="chart_label">
                                 Dance
                             </span>
@@ -320,7 +321,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 44%;">
+                        <li class="chart_bar" id="Rifle">
                             <span class="chart_label">
                                 Rifle
                             </span>
@@ -328,7 +329,7 @@
                                 2
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 72%;">
+                        <li class="chart_bar" id="WardrobeStyle">
                             <span class="chart_label">
                                 Wardrobe Style
                             </span>
@@ -336,7 +337,7 @@
                                 6
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 44%;">
+                        <li class="chart_bar" id="Oratory">
                             <span class="chart_label">
                                 Oratory
                             </span>
@@ -344,7 +345,7 @@
                                 2
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 72%;">
+                        <li class="chart_bar" id="PersuasionFastTalk">
                             <span class="chart_label">
                                 Persuasion Fast-talk
                             </span>
@@ -352,7 +353,7 @@
                                 6
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 44%;">
+                        <li class="chart_bar" id="Composition">
                             <span class="chart_label">
                                 Composition
                             </span>
@@ -360,7 +361,7 @@
                                 2
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 37%;">
+                        <li class="chart_bar" id="DodgeEscape">
                             <span class="chart_label">
                                 Dodge Escape
                             </span>
@@ -368,7 +369,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 58%;">
+                        <li class="chart_bar" id="Stealth">
                             <span class="chart_label">
                                 Stealth
                             </span>

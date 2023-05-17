@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../../../resources/CSS/barchart.css" type="text/css" />
     <link rel="stylesheet" href="../../../resources/CSS/review_cards.css" type="text/css" />
     <link rel="stylesheet" href="../../../resources/CSS/cardlayout.css" type="text/css" />
+    <link rel="stylesheet" href="../../../resources/CSS/Merrick.css" type="text/css" />
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,7 +148,7 @@
             <div class="charts">
                 <div class="chart chart-abilities">
                     <ul class="chart-horiz">
-                        <li class="chart_bar" style="width: 46%;">
+                        <li class="chart_bar" id="Strength">
                             <span class="chart_label">
                                 Strength
                             </span>
@@ -155,23 +156,23 @@
                                 -1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 82%;">
+                        <li class="chart_bar" id="Dexterity">
                             <span class="chart_label">
                                 Dexterity
+                            </span>
+                            <span class="chart_value">
+                                4
+                            </span>
+                        </li>
+                        <li class="chart_bar" id="Constitution">
+                            <span class="chart_label">
+                                Constitution
                             </span>
                             <span class="chart_value">
                                 3
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 73%;">
-                            <span class="chart_label">
-                                Constitution
-                            </span>
-                            <span class="chart_value">
-                                2
-                            </span>
-                        </li>
-                        <li class="chart_bar" style="width: 64%;">
+                        <li class="chart_bar" id="Intelligence">
                             <span class="chart_label">
                                 Intelligence
                             </span>
@@ -179,7 +180,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 68.5%;">
+                        <li class="chart_bar" id="Wisdom">
                             <span class="chart_label">
                                 Wisdom
                             </span>
@@ -187,7 +188,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 100%;">
+                        <li class="chart_bar" id="Charisma">
                             <span class="chart_label">
                                 Charisma
                             </span>
@@ -208,7 +209,7 @@
             <div class="charts">
                 <div class="chart chart-saving_throws">
                     <ul class="chart--horiz">
-                        <li class="chart_bar" style="width: 10%;">
+                        <li class="chart_bar" id="StrengthST">
                             <span class="chart_label">
                                 Strength
                             </span>
@@ -216,7 +217,7 @@
                                 -1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 46%;">
+                        <li class="chart_bar" id="DexterityST">
                             <span class="chart_label">
                                 Dexterity
                             </span>
@@ -224,7 +225,7 @@
                                 3
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 73%;">
+                        <li class="chart_bar" id="ConstitutionST">
                             <span class="chart_label">
                                 Constitution
                             </span>
@@ -232,7 +233,7 @@
                                 6
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 28%;">
+                        <li class="chart_bar" id="IntelligenceST">
                             <span class="chart_label">
                                 Intelligence
                             </span>
@@ -240,7 +241,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 28%;">
+                        <li class="chart_bar" id="WisdomST">
                             <span class="chart_label">
                                 Wisdom
                             </span>
@@ -248,7 +249,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 100%;">
+                        <li class="chart_bar" id="CharismaST">
                             <span class="chart_label">
                                 Charisma
                             </span>
@@ -269,7 +270,7 @@
             <div class="charts">
                 <div class="chart chart-skills_skills">
                     <ul class="chart--horiz">
-                        <li class="chart_bar" style="width: 51.4%;">
+                        <li class="chart_bar" id="Acrobatics">
                             <span class="chart_label">
                                 Acrobatics (DEX)
                             </span>
@@ -277,7 +278,7 @@
                                 3
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 34.3%;">
+                        <li class="chart_bar" id="AnimalHandling">
                             <span class="chart_label">
                                 Animal Handling (WIS)
                             </span>
@@ -285,7 +286,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 34.3%;">
+                        <li class="chart_bar" id="Arcana">
                             <span class="chart_label">
                                 Arcana (INT)
                             </span>
@@ -293,7 +294,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 18.1%;">
+                        <li class="chart_bar" id="Athletics">
                             <span class="chart_label">
                                 Athletics (STR)
                             </span>
@@ -301,7 +302,7 @@
                                 -1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 100%;">
+                        <li class="chart_bar" id="Deception">
                             <span class="chart_label">
                                 Deception (CHA)
                             </span>
@@ -309,7 +310,7 @@
                                 9
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 34.3%;">
+                        <li class="chart_bar" id="History">
                             <span class="chart_label">
                                 History (INT)
                             </span>
@@ -317,7 +318,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 26.2%;">
+                        <li class="chart_bar" id="Insight">
                             <span class="chart_label">
                                 Insight (WIS)
                             </span>
@@ -325,7 +326,7 @@
                                 0
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 100%;">
+                        <li class="chart_bar" id="Intimidation">
                             <span class="chart_label">
                                 Intimidation (CHA)
                             </span>
@@ -333,7 +334,7 @@
                                 9
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 34.3%;">
+                        <li class="chart_bar" id="Investigation">
                             <span class="chart_label">
                                 Investigation (INT)
                             </span>
@@ -341,7 +342,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 34.3%;">
+                        <li class="chart_bar" id="Medicine">
                             <span class="chart_label">
                                 Medicine (WIS)
                             </span>
@@ -349,7 +350,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 34.3%;">
+                        <li class="chart_bar" id="Nature">
                             <span class="chart_label">
                                 Nature (INT)
                             </span>
@@ -357,7 +358,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 67.6%;">
+                        <li class="chart_bar" id="Perception">
                             <span class="chart_label">
                                 Perception (WIS)
                             </span>
@@ -365,7 +366,7 @@
                                 5
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 67.6%;">
+                        <li class="chart_bar" id="Performance">
                             <span class="chart_label">
                                 Performance (CHA)
                             </span>
@@ -373,7 +374,7 @@
                                 5
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 100%;">
+                        <li class="chart_bar" id="Persuasion">
                             <span class="chart_label">
                                 Persuasion (CHA)
                             </span>
@@ -381,7 +382,7 @@
                                 9
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 34.3%;">
+                        <li class="chart_bar" id="Religion">
                             <span class="chart_label">
                                 Religion (INT)
                             </span>
@@ -389,7 +390,7 @@
                                 1
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 51.4%;">
+                        <li class="chart_bar" id="SleightOfHand">
                             <span class="chart_label">
                                 Sleight of Hand (DEX)
                             </span>
@@ -397,7 +398,7 @@
                                 3
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 83.8%;">
+                        <li class="chart_bar" id="Stealth">
                             <span class="chart_label">
                                 Stealth (DEX)
                             </span>
@@ -405,7 +406,7 @@
                                 7
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 34.3%;">
+                        <li class="chart_bar" id="Survival">
                             <span class="chart_label">
                                 Survival (WIS)
                             </span>
@@ -426,25 +427,25 @@
             <div class="charts">
                 <div class="chart chart-passive_senses">
                     <ul class="chart-horiz">
-                        <li class="chart_bar" style="width: 75%;">
+                        <li class="chart_bar" id="PerceptionPS">
                             <span class="chart_label">
-                                Passive Wisdom (Perception)
+                                Passive Perception
                             </span>
                             <span class="chart_value">
                                 15
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 55%;">
+                        <li class="chart_bar" id="InvestigationPS">
                             <span class="chart_label">
-                                Passive Intelligence (Investigation)
+                                Passive Investigation
                             </span>
                             <span class="chart_value">
                                 11
                             </span>
                         </li>
-                        <li class="chart_bar" style="width: 50%;">
+                        <li class="chart_bar" id="InsightPS">
                             <span class="chart_label">
-                                Passive Wisdom (Insight)
+                                Passive Insight
                             </span>
                             <span class="chart_value">
                                 10

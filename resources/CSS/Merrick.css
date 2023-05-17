@@ -1,0 +1,286 @@
+.chart_bar {
+    background: linear-gradient(to left, #665e87, rgb(37, 37, 37), rgb(37, 37, 37), rgb(37, 37, 37));
+}
+
+.chart_label {
+    color: white;
+}
+
+.chart_value {
+    color: white;
+}
+
+/*Abilities*/
+#Strength {
+    width: 46%
+}
+
+#Dexterity {
+    width: 91%
+}
+
+#Constitution {
+    width: 82%;
+}
+
+#Intelligence {
+    width: 64%;
+}
+
+#Wisdom {
+    width: 64%;
+}
+
+#Charisma {
+    width: 100%;
+}
+
+/*Saving Throws*/
+#StrengthST {
+    width: 10%;
+}
+
+#DexterityST {
+    width: 46%;
+}
+
+#ConstitutionST {
+    width: 73%;
+}
+
+#IntelligenceST {
+    width: 28%;
+}
+
+#WisdomST {
+    width: 28%;
+}
+
+#CharismaST {
+    width: 100%;
+}
+
+/*Skills*/
+#Acrobatics {
+    width: 46%;
+}
+
+#AnimalHandling {
+    width: 28%;
+}
+
+#Arcana {
+    width: 28%;
+}
+
+#Athletics {
+    width: 10%;
+}
+
+#Deception {
+    width: 100%;
+}
+
+#History {
+    width: 28%;
+}
+
+#Insight {
+    width: 19%;
+}
+
+#Intimidation {
+    width: 100%;
+}
+
+#Investigation {
+    width: 28%;
+}
+
+#Medicine {
+    width: 28%;
+}
+
+#Nature {
+    width: 28%;
+}
+
+#Perception {
+    width: 64%;
+}
+
+#Performance {
+    width: 64%;
+}
+
+#Persuasion {
+    width: 100%;
+}
+
+#Religion {
+    width: 28%;
+}
+
+#SleightOfHand {
+    width: 46%;
+}
+
+#Stealth {
+    width: 82%;
+}
+
+#Survival {
+    width: 28%;
+}
+
+/*Passive Senses*/
+#PerceptionPS {
+    width: 75%;
+}
+
+#InvestigationPS {
+    width: 55%;
+}
+
+#InsightPS {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+
+    /*Abilities*/
+    #Strength {
+        width: 70%
+    }
+
+    #Dexterity {
+        width: 95%
+    }
+
+    #Constitution {
+        width: 90%;
+    }
+
+    #Intelligence {
+        width: 80%;
+    }
+
+    #Wisdom {
+        width: 80%;
+    }
+
+    #Charisma {
+        width: 100%;
+    }
+
+    /*Saving Throws*/
+    #StrengthST {
+        width: 50%;
+    }
+
+    #DexterityST {
+        width: 70%;
+    }
+
+    #ConstitutionST {
+        width: 85%;
+    }
+
+    #IntelligenceST {
+        width: 60%;
+    }
+
+    #WisdomST {
+        width: 60%;
+    }
+
+    #CharismaST {
+        width: 100%;
+    }
+
+    /*Skills*/
+    #Acrobatics {
+        width: 70%;
+    }
+
+    #AnimalHandling {
+        width: 60%;
+    }
+
+    #Arcana {
+        width: 60%;
+    }
+
+    #Athletics {
+        width: 50%;
+    }
+
+    #Deception {
+        width: 100%;
+    }
+
+    #History {
+        width: 60%;
+    }
+
+    #Insight {
+        width: 55%;
+    }
+
+    #Intimidation {
+        width: 100%;
+    }
+
+    #Investigation {
+        width: 60%;
+    }
+
+    #Medicine {
+        width: 60%;
+    }
+
+    #Nature {
+        width: 60%;
+    }
+
+    #Perception {
+        width: 80%;
+    }
+
+    #Performance {
+        width: 80%;
+    }
+
+    #Persuasion {
+        width: 100%;
+    }
+
+    #Religion {
+        width: 60%;
+    }
+
+    #SleightOfHand {
+        width: 70%;
+    }
+
+    #Stealth {
+        width: 90%;
+    }
+
+    #Survival {
+        width: 60%;
+    }
+
+    /*Passive Senses*/
+    #PerceptionPS {
+        width: 75%;
+    }
+
+    #InvestigationPS {
+        width: 55%;
+    }
+
+    #InsightPS {
+        width: 50%;
+    }
+}

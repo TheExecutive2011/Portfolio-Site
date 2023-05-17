@@ -1,0 +1,90 @@
+.chart_bar {
+    background: linear-gradient(to left, #f9e50c, #c32f1e, #c32f1e, #c32f1e);
+}
+
+.chart_label {
+    color: white;
+}
+
+.chart_value {
+    color: black;
+}
+
+/*Abilities*/
+#Strength {
+    width: 50.5%
+}
+
+#Agility {
+    width: 64%
+}
+
+#Stamina {
+    width: 73%;
+}
+
+#Personality {
+    width: 68.5%;
+}
+
+#Intelligence {
+    width: 64%;
+}
+
+#Luck {
+    width: 77.5%;
+}
+
+/*Saving Throws*/
+#Reflex {
+    width: 10%;
+}
+
+#Fortitude {
+    width: 20%;
+}
+
+#Will {
+    width: 20%;
+}
+
+@media (max-width: 768px) {
+
+    /*Abilities*/
+    #Strength {
+        width: 72.5%
+    }
+
+    #Agility {
+        width: 80%
+    }
+
+    #Stamina {
+        width: 85%;
+    }
+
+    #Personality {
+        width: 82.5%;
+    }
+
+    #Intelligence {
+        width: 80%;
+    }
+
+    #Luck {
+        width: 87.5%;
+    }
+
+    /*Saving Throws*/
+    #Reflex {
+        width: 50%;
+    }
+
+    #Fortitude {
+        width: 60%;
+    }
+
+    #Will {
+        width: 60%;
+    }
+}
