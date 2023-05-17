@@ -96,6 +96,50 @@
     background-image: url("../images/BoardGameArt/SushiGo.webp");
 }
 
+/*TRPG Characters*/
+
+#AmanMistaren:before {
+    background-image: url("../images/MerrickRavenfall.png");
+}
+
+#Bob:before {
+    background-image: url("../images/TRPGArt/Characters/Cyberpunk2020/Bob.png");
+}
+
+#Bobbert:before {
+    background-image: url("../images/TRPGArt/Characters/DnD/Bobbert.png");
+}
+
+#Cyberpunk2020Character:before {
+    background-image: url("../images/MerrickRavenfall.png");
+}
+
+#DreadCharacter:before {
+    background-image: url("../images/MerrickRavenfall.png");
+}
+
+#WeirdFrontiersCharacter:before {
+    background-image: url("../images/MerrickRavenfall.png");
+}
+
+/*TRPG REVIEWS*/
+
+#Cyberpunk2020:before {
+    background-image: url("../images/TRPGArt/Cyberpunk2020.webp");
+}
+
+#Dread:before {
+    background-image: url("../images/TRPGArt/Dread.jpg");
+}
+
+#DnD:before {
+    background-image: url("../images/TRPGArt/DnDLogo.jpg");
+}
+
+#WeirdFrontiers:before {
+    background-image: url("../images/TRPGArt/WeirdFrontiers.jpg");
+}
+
 /*VIDEO GAME REVIEWS*/
 
 #AstrosPlayroom:before {

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>XML Example</title>
+</head>
+<body>
+  <h1>My Collection</h1>
+  <ul id="collection-list">
+  </ul>
+  <script>
+    const bggData = new XMLHttpRequest();
+
+    bggData.onreadystatechange = function() {
+      if (bggData.readyState === XMLHttpRequest.DONE) {
+        if (bggData.status === 200) {
+          // success
+          const xmlData = bggData.responseXML;
+          // Get the list of items in the collection
+          const items = xmlData.getElementsByTagName('item');
+          // Get the list element
+          const collectionList = document.getElementById('collection-list');
+          // Iterate through the items and add them to the list
+          for (const item of items) {
+            // Get the name, year published, and image of the item
+            const name = item.getElementsByTagName('name')[0].textContent;
+            const year = item.getElementsByTagName('yearpublished')[0].textContent;
+            const image = item.getElementsByTagName('image')[0].textContent;
+            // Get the statistics for the item
+            const stats = item.getElementsByTagName('stats')[0];
+            const rating = stats.getAttribute('rating');
+            const usersRated = stats.getAttribute('usersrated');
+            const average = stats.getAttribute('average');
+            // Get the status and number of plays for the item
+            const status = item.getElementsByTagName('status')[0].getAttribute('own');
+            const numPlays = item.getElementsByTagName('numplays')[0].textContent;
+            
+            // Create a new list item and add it to the list
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+              <img src="${image}" alt="${name}">
+              <h2>${name}</h2>
+              <p>Year Published: ${year}</p>
+              <p>Rating: ${rating}</p>
+              <p>Users Rated: ${usersRated}</p>
+              <p>Average Rating: ${average}</p>
+              <p>Status: ${status}</p>
+              <p>Number of Plays: ${numPlays}</p>
+            `;
+            collectionList.appendChild(listItem);
+          }
+        } else {
+          // error
+          console.error(bggData.statusText);
+        }
+      }
+    };
+
+    bggData.open('GET', 'https://boardgamegeek.com/xmlapi/collection/theexecutive2011?played=1');
+    bggData.send();
+  </script>
+</body>
+</html>
