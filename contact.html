@@ -13,7 +13,10 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="resources/CSS/stylesheet.css" type="text/css"/>
+
+  <link rel="stylesheet" href="resources/CSS/stylesheet.css" type="text/css" />
+  <link rel="stylesheet" href="resources/CSS/contact.css" type="text/css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap">
@@ -56,7 +59,10 @@
   </nav>
   <!-- Beginning of page content -->
 
-  <img src="resources/images/write_letter.jpg" alt="Someone writing a letter" class="header_image">
+  <!-- 
+    <img src="resources/images/write_letter.jpg" alt="Someone writing a letter" class="header_image">
+  -->
+
   <!-- Content wrapper -->
   <div class="body_text">
     <h1>
@@ -68,20 +74,53 @@
     </h3>
     <br>
     <p>
-      Connect with me on <a class='link' rel="noopener" href="https://www.linkedin.com/in/warrengmorrison/" target="_blank">LinkedIn</a>!
+      Connect with me on <a class='link' rel="noopener" href="https://www.linkedin.com/in/warrengmorrison/"
+        target="_blank">LinkedIn</a>!
     </p>
     <br>
+    <hr/>
+    <br>
     <p>
-      Prefer email? <a class='link' rel="noopener" href="mailto:WarrenMorrisonPortfolioSite@gmail.com" target="_blank">Send me one</a>!
+      Prefer email? <a class='link' rel="noopener" href="mailto:WarrenMorrisonPortfolioSite@gmail.com"
+        target="_blank">Send me one</a>!
     </p>
     <p class="note">
       <i>Don't worry - I know I'll likely catch some spam from this. It's a temporary email address that I'll use until
         the shiny, new, and secure contact form is completed!</i>
     </p>
     <br>
+    <hr/>
+    <br>
     <p>
-      If you already have my phone number (current area code 704), don't be afraid to send me a text!
+      Send me a message via this form! 
     </p>
+    <!--Container div for entire contact form-->
+    <div id="contactForm">
+      <!--Section for entire contact form-->
+      <section id="contact">
+        <!--Header for contact form-->
+        <h1 class="section-header">Contact Me</h1>
+        <!--Wrapper for the actual content other than the heading-->
+        <div class="contact-wrapper">
+          <!--Input form-->
+          <form id="inputForm" role="form">
+            <!--Name field-->
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+            <!--Email field-->
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+            <!--Message field-->
+            <textarea rows="10" class="form-control" id="message" placeholder="MESSAGE" name="message"
+              required></textarea>
+            <!--Send button-->
+            <button class="send-button" id="submit" type="submit" value="SEND">
+              SEND
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <p id="form-response"></p>
+
   </div>
 </body>
 
